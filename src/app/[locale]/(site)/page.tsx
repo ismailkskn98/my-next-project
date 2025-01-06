@@ -1,3 +1,5 @@
-export default function Home() {
-  return <main>asghsa</main>;
+import Home from "@/components/home";
+
+export default function page() {
+  return <Home />;
 }
