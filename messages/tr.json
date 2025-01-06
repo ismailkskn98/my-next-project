@@ -1,0 +1,20 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Anasayfa",
+      "about": "Hakkında",
+      "roadmap": "Yol Haritası",
+      "token": "Token",
+      "team": "Ekip",
+      "faq": "SSS",
+      "blog": "Blog",
+      "contact": "İletişim"
+    },
+    "LocaleSwitcher": {
+      "tr": "Türkçe",
+      "en": "Ingilizce"
+    },
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol"
+  }
+}

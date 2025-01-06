@@ -1,0 +1,20 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "roadmap": "Roadmap",
+      "token": "Token",
+      "team": "Team",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "localeSwitcher": {
+      "tr": "Turkish",
+      "en": "English"
+    },
+    "login": "Login",
+    "register": "Register"
+  }
+}
