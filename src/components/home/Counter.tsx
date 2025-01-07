@@ -20,26 +20,22 @@ export default function Counter() {
     { title: "Minutes", value: timeLeft.minutes },
     { title: "Seconds", value: timeLeft.seconds },
   ];
+
   return (
-    <>
-      <div className="grid grid-cols-4 gap-7 text-center text-6xl">
-        {timeItems.map((item, index) => (
-          <div key={index} className="space-y-2">
-            <div className="relative font-bold">
-              {item.value}
-              {index + 1 === timeItems.length ? (
-                ""
-              ) : (
-                <span className="absolute -right-6 -top-1 font-bold text-gray-800">
-                  :
-                </span>
-              )}
-            </div>
-            <div className="text-lg uppercase">{item.title}</div>
+    <div className="flex items-center justify-center gap-4 sm:gap-7">
+      {timeItems.map((item, index) => (
+        <div key={index} className="text-center">
+          <div className="relative text-[38px] font-bold sm:text-6xl">
+            {item.value}
+            {index + 1 !== timeItems.length && (
+              <span className="absolute -right-4 top-1/2 -translate-y-1/2 font-bold text-gray-800 sm:-right-6">
+                :
+              </span>
+            )}
           </div>
-        ))}
-      </div>
-      <div className="text-center text-sm">The clock has stopped!</div>
-    </>
+          <div className="mt-2 text-xs uppercase sm:text-sm">{item.title}</div>
+        </div>
+      ))}
+    </div>
   );
 }

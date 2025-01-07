@@ -8,9 +8,9 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="fluid gridContainer align-center relative h-full min-h-screen w-full space-y-5 overflow-x-hidden bg-mainLayoutBg">
+    <main className="gridContainer align-center font-tajaval relative z-0 h-full min-h-screen w-full space-y-5 overflow-x-hidden bg-mainLayoutBg">
       <Particles
-        className="fluid absolute inset-0 -z-10"
+        className="fluid absolute inset-0 z-10"
         quantity={200}
         ease={40}
         color="#fff"

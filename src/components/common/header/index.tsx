@@ -7,8 +7,8 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="fluid gridContainer overflow-hidden">
-      <main className="xl flex items-center justify-between py-3">
+    <header className="fluid gridContainer">
+      <main className="flex items-center justify-between overflow-hidden py-3">
         <Logo />
         <Navbar />
         <section className="flex items-center justify-between gap-8 overflow-hidden lg:gap-0">

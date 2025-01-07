@@ -14,7 +14,121 @@
       "tr": "Turkish",
       "en": "English"
     },
+    "language": "Language",
     "login": "Login",
     "register": "Register"
+  },
+  "Home": {
+    "mobilContactTitle": "Cryptoland Just Entered the Real World",
+    "mobilContactDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "RoadMap": {
+    "pageTitle": "RoadMap",
+    "title": "Road Map",
+    "marketCap": "total market capitalization",
+    "milestones": [
+      {
+        "date": "27TH JUNE 2018",
+        "title": "Bitcoin public launch",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "27TH AUG 2018",
+        "title": "$1 billion capitalization",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "25TH SEPT 2018",
+        "title": "Ripple's major gains",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "15TH DEC 2018",
+        "title": "Ethereum's meteoric rise",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "27TH MAY 2018",
+        "title": "First peak value for Bitcoin",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "5TH SEPTEMBER 2018",
+        "title": "Bitcoin worth $1,000",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      },
+      {
+        "date": "19TH OCTOBER 2018",
+        "title": "LiteCoin's surge",
+        "description": "First 1,000 Bitcoins were released to the public, each one costing $0.3",
+        "value": "$67,751,058"
+      }
+    ]
+  },
+  "Token": {
+    "pageTitle": "Token"
+  },
+  "Footer": {
+    "contact": {
+      "phone": "+90 (212) 444 44 44",
+      "email": "info@c1coin.com",
+      "city": "Istanbul"
+    },
+    "workingHours": {
+      "weekday": "Monday - Saturday: 08:00 - 22:00",
+      "sunday": "Sunday: CLOSED"
+    },
+    "company": {
+      "title": "Our Company",
+      "about": "About Us",
+      "token": "Token",
+      "team": "Team",
+      "blog": "Blog"
+    },
+    "services": {
+      "title": "Services",
+      "roadMap": "Road Map",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "newsletter": {
+      "title": "Email Newsletter",
+      "subtitle": "Subscribe to our newsletter!",
+      "emailPlaceholder": "Email Address"
+    },
+    "copyright": {
+      "rights": "All rights reserved.",
+      "madeWith": "Made with",
+      "by": "By C1Coin"
+    }
+  },
+  "About": {
+    "pageTitle": "About",
+    "title": "What is ICO Crypto?",
+    "subtitle": "ICO Crypto is a platform for the future of funding that powers data for the new equity blockchain.",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.",
+    "buyTokens": "BUY TOKENS",
+    "watchVideo": {
+      "title": "Watch video",
+      "subtitle": "about bitcoin"
+    },
+    "runAnywhere": {
+      "title": "RUN YOUR ICO FROM ANYWHERE",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quasi ipsum animi optio accusamus repudiandae beatae voluptatibus sed, magni labore."
+    },
+    "stats": {
+      "revenue": "billion USD as expected revenue coins by 2020",
+      "clients": "million potential clients worldwide",
+      "noBorders": "no borders for international payments",
+      "speed": "times faster transaction speed"
+    }
   }
 }

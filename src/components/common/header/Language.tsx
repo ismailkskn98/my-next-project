@@ -10,7 +10,7 @@ import {
 import { SelectGroup, SelectLabel } from "@radix-ui/react-select";
 
 import Image from "next/image";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { useRef, useTransition } from "react";
 import { useParams } from "next/navigation";
@@ -24,6 +24,7 @@ export default function Language() {
   const [, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
+  const t = useTranslations("Header");
 
   useGSAP(() => {
     gsap.from(languageSelectRef.current, {
@@ -36,7 +37,7 @@ export default function Language() {
   return (
     <article
       ref={languageSelectRef}
-      className="flex max-w-28 items-center justify-end gap-3"
+      className="font-raleway flex max-w-28 items-center justify-end gap-3 font-semibold"
     >
       <Select
         defaultValue={locale}
@@ -59,7 +60,7 @@ export default function Language() {
         <SelectContent className="max-h-[200px] !overflow-visible overflow-y-auto">
           <SelectGroup>
             <SelectLabel className="pointer-events-none mb-2 text-center text-sm text-gray-400">
-              {locale}
+              {t("language")}
             </SelectLabel>
             <SelectItem value="en">
               <div className="flex items-center gap-1 xl:gap-2">

@@ -1,6 +1,6 @@
-import About from "@/components/about";
+import Token from "@/components/token";
 import React from "react";
 
 export default function page() {
-  return <About />;
+  return <Token />;
 }

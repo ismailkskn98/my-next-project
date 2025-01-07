@@ -20,7 +20,7 @@ export default function AuthLink() {
   return (
     <article
       ref={languageRef}
-      className="ml-4 flex items-center gap-3 overflow-hidden text-sm text-white"
+      className="font-raleway ml-4 flex items-center gap-3 overflow-hidden text-sm font-semibold text-white"
     >
       <Link
         href="/login"

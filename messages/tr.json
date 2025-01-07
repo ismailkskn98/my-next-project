@@ -14,7 +14,121 @@
       "tr": "Türkçe",
       "en": "Ingilizce"
     },
+    "language": "Dil Seç",
     "login": "Giriş Yap",
     "register": "Kayıt Ol"
+  },
+  "Home": {
+    "mobilContactTitle": "Cryptoland Gerçek Dünyaya Yeni Girdi",
+    "mobilContactDescription": "Okuyucunun dikkatinin dağılacağı uzun süredir bilinen bir gerçektir. düzenine bakıldığında bir sayfanın okunabilir içeriği.",
+    "about": "Hakkında",
+    "contact": "İletişim"
+  },
+  "RoadMap": {
+    "pageTitle": "Yol Haritası",
+    "title": "Yol Haritası",
+    "marketCap": "toplam piyasa değeri",
+    "milestones": [
+      {
+        "date": "27 HAZİRAN 2018",
+        "title": "Bitcoin halka açılışı",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "27 AĞUSTOS 2018",
+        "title": "1 milyar dolar piyasa değeri",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "25 EYLÜL 2018",
+        "title": "Ripple'ın büyük kazançları",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "15 ARALIK 2018",
+        "title": "Ethereum'un meteor yükselişi",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "27 MAYIS 2018",
+        "title": "Bitcoin'in ilk zirve değeri",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "5 EYLÜL 2018",
+        "title": "Bitcoin 1.000$ değerinde",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      },
+      {
+        "date": "19 EKİM 2018",
+        "title": "LiteCoin'in yükselişi",
+        "description": "İlk 1.000 Bitcoin halka arz edildi, her biri 0,3$ değerindeydi",
+        "value": "67.751.058$"
+      }
+    ]
+  },
+  "Token": {
+    "pageTitle": "Token"
+  },
+  "Footer": {
+    "contact": {
+      "phone": "+90 (212) 444 44 44",
+      "email": "info@c1coin.com",
+      "city": "İstanbul"
+    },
+    "workingHours": {
+      "weekday": "Pazartesi - Cumartesi: 08:00 - 22:00",
+      "sunday": "Pazar: KAPALI"
+    },
+    "company": {
+      "title": "Şirketimiz",
+      "about": "Hakkımızda",
+      "token": "Token",
+      "team": "Takım",
+      "blog": "Blog"
+    },
+    "services": {
+      "title": "Hizmetler",
+      "roadMap": "Yol Haritası",
+      "faq": "SSS",
+      "contact": "İletişim"
+    },
+    "newsletter": {
+      "title": "E-posta Bülteni",
+      "subtitle": "Bültenimize abone olun!",
+      "emailPlaceholder": "E-posta Adresi"
+    },
+    "copyright": {
+      "rights": "Tüm hakları saklıdır.",
+      "madeWith": "Sevgiyle yapıldı",
+      "by": "C1Coin tarafından"
+    }
+  },
+  "About": {
+    "pageTitle": "Hakkımızda",
+    "title": "ICO Crypto Nedir?",
+    "subtitle": "ICO Crypto, yeni hisse senedi blockchain'i için veri sağlayan bir gelecek fonlama platformudur.",
+    "description": "Lorem Ipsum pasajlarının birçok farklı versiyonu mevcuttur, ancak çoğu bir şekilde değişikliğe uğramış, mizah eklenmiş ya da rastgele kelimelerle değiştirilmiştir ve bu da inandırıcı görünmemektedir. Eğer bir Lorem Ipsum pasajı kullanacaksanız, hiçbir şeyin eksik olmadığından emin olmalısınız.",
+    "buyTokens": "TOKEN AL",
+    "watchVideo": {
+      "title": "Video izle",
+      "subtitle": "bitcoin hakkında"
+    },
+    "runAnywhere": {
+      "title": "ICO'NUZU HER YERDEN YÖNETİN",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quasi ipsum animi optio accusamus repudiandae beatae voluptatibus sed, magni labore."
+    },
+    "stats": {
+      "revenue": "milyar USD beklenen coin geliri 2020'ye kadar",
+      "clients": "milyon potansiyel müşteri dünya çapında",
+      "noBorders": "uluslararası ödemeler için sınır yok",
+      "speed": "kat daha hızlı işlem hızı"
+    }
   }
 }

@@ -55,7 +55,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navContainerRef}
-      className="hidden min-h-11 flex-1 items-center gap-5 lg:mx-3 lg:flex xl:mx-10"
+      className="font-raleway hidden min-h-11 flex-1 items-center gap-5 font-semibold lg:mx-3 lg:flex xl:mx-10"
     >
       {navItems.map((item, index) => {
         return (

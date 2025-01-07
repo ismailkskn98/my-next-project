@@ -20,13 +20,13 @@ export default function Logo() {
       <Link href="/">
         <Image
           ref={navLogoRef}
-          width={70}
+          width={80}
           height={70}
           quality={100}
           priority
           src="/images/logo.png"
           alt="c1coin logo"
-          className="relative size-16 2xl:max-h-16"
+          className="relative h-auto"
         />
       </Link>
     </article>
