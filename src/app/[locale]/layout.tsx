@@ -70,24 +70,23 @@ const tajawalFont = localFont({
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: { locale: string };
-}>) {
-  const { locale } = await params;
-
+}) {
+  const { locale } = params;
   if (!routing.locales.includes(locale as "en" | "tr")) {
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} className="h-full w-full">
       <body
         className={`h-full w-full ${ralewayFont.variable} ${tajawalFont.variable}`}
       >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
