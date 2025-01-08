@@ -1,12 +1,25 @@
 import { Link, NavPaths } from "@/i18n/routing";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useRef } from "react";
 
 export default function MobilContact() {
   const t = useTranslations("Home");
+
+  const elementRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.from(elementRef.current, {
+      y: 500,
+      opacity: 0,
+      duration: 0.8,
+    });
+  });
+
   return (
     <section className="flex items-center justify-center bg-transparent px-4 text-center text-white">
-      <div className="max-w-3xl space-y-6">
+      <div ref={elementRef} className="max-w-3xl space-y-6">
         <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
           {t("mobilContactTitle")}
         </h1>

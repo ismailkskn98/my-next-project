@@ -2,7 +2,7 @@
   background: rgb(192, 120, 37);
   background: linear-gradient(
     0deg,
-    rgb(192, 120, 37) 0%,
+    rgba(192, 120, 37, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -11,7 +11,7 @@
   background: rgb(192, 120, 37);
   background: linear-gradient(
     180deg,
-    rgba(192, 120, 37, 0.88) 0%,
+    rgba(192, 120, 37, 0.3) 0%,
     rgba(255, 255, 255, 0) 30%
   );
 }
@@ -20,7 +20,7 @@
   background: rgb(192, 120, 37);
   background: linear-gradient(
     90deg,
-    rgba(192, 120, 37, 0.88) 0%,
+    rgba(192, 120, 37, 0.3) 0%,
     rgba(255, 255, 255, 0) 30%
   );
 }
@@ -28,7 +28,7 @@
   background: rgb(192, 120, 37);
   background: linear-gradient(
     270deg,
-    rgba(192, 120, 37, 0.88) 0%,
+    rgba(192, 120, 37, 0.3) 0%,
     rgba(255, 255, 255, 0) 30%
   );
 }

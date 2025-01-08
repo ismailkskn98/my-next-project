@@ -10,6 +10,8 @@ export enum NavPaths {
   FAQ = "/faq",
   BLOG = "/blog",
   CONTACT = "/contact",
+  LOGIN = "/auth/login",
+  REGISTER = "/auth/register",
 }
 
 export const routing = defineRouting({
@@ -25,7 +27,7 @@ export const routing = defineRouting({
       en: "/", // İngilizce için
       tr: "/", // Türkçe için
     }, // Anasayfa, her iki dilde de aynı yol
-    "/about": {
+    [NavPaths.ABOUT]: {
       en: "/about", // İngilizce için
       tr: "/about", // Türkçe için
     },
@@ -52,6 +54,14 @@ export const routing = defineRouting({
     [NavPaths.TOKEN]: {
       en: "/token",
       tr: "/token", // Eğer Türkçede de aynı yol kullanılacaksa
+    },
+    [NavPaths.LOGIN]: {
+      en: "/auth/login",
+      tr: "/auth/login", // Eğer Türkçede de aynı yol kullanılacaksa
+    },
+    [NavPaths.REGISTER]: {
+      en: "/auth/register",
+      tr: "/auth/register", // Eğer Türkçede de aynı yol kullanılacaksa
     },
   },
 });

@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="fluid gridContainer">
+    <header className="fluid gridContainer relative z-10 bg-black/25 py-3">
       <main className="flex items-center justify-between overflow-hidden py-3">
         <Logo />
         <Navbar />

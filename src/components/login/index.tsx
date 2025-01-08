@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Formik, Form } from "formik";
 import CustomInput from "./components/CustomInput";
@@ -16,7 +17,6 @@ const Login: React.FC = () => {
 
   const handleSubmit = (values: LoginFormValues) => {
     console.log(values);
-    // Burada giriş işlemlerini gerçekleştirebilirsiniz
   };
 
   return (

@@ -11,7 +11,7 @@ export default function HorizontalTimeline({
   return (
     <div className="mx-auto hidden w-full py-16 lg:block">
       <div className="relative w-full">
-        <div className="absolute left-0 right-0 top-1/2 h-0.5 w-full -translate-y-1/2 bg-border" />
+        <div className="absolute left-0 right-0 top-1/2 h-0.5 w-full -translate-y-1/2 rounded-full bg-black/50" />
 
         <div className="relative grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-6">
           {milestones.slice(0, 6).map((item, index) => (
@@ -28,18 +28,18 @@ export default function HorizontalTimeline({
 
               <div
                 className={cn(
-                  "absolute left-1/2 w-0.5 bg-border",
+                  "absolute left-1/2 w-0.5 bg-black/50",
                   index % 2 === 0 ? "bottom-[50%] h-5 md:h-5" : "top-[50%] h-5",
                 )}
               />
 
-              <Card className="relative min-h-[192px] transform bg-white/50 transition-transform duration-300 hover:scale-105">
+              <Card className="relative min-h-[192px] transform border-none bg-black/50 text-white/90 transition-transform duration-300 hover:scale-105">
                 <CardContent className="p-6">
-                  <time className="mb-2 block text-sm text-muted-foreground">
-                    {item.date}
-                  </time>
-                  <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-black/70">{item.description}</p>
+                  <time className="mb-2 block text-sm">{item.date}</time>
+                  <h3 className="mb-2 font-raleway font-semibold">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm">{item.description}</p>
                 </CardContent>
               </Card>
             </div>

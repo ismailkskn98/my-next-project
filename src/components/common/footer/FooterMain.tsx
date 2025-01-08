@@ -26,7 +26,7 @@ export default function FooterMain() {
         <div className="flex flex-col items-start gap-2">
           <div className="flex items-center gap-1">
             <span>{t("contact.city")}</span>
-            <p className="text-black">{t("contact.phone")}</p>
+            <p className="">{t("contact.phone")}</p>
           </div>
           <a href={`hrefto:${t("contact.email")}`}>{t("contact.email")}</a>
         </div>
@@ -35,29 +35,29 @@ export default function FooterMain() {
           <p>{t("workingHours.sunday")}</p>
         </div>
       </article>
-      <section className="flex w-full flex-col items-center justify-around sm:flex-row lg:justify-between lg:gap-5">
-        <article className="flex flex-col items-center gap-2 capitalize">
+      <section className="flex w-full flex-col items-center justify-around sm:flex-row lg:items-start lg:justify-between lg:gap-5">
+        <article className="flex flex-col items-center gap-3 capitalize">
           <h4 className="font-semibold">{t("company.title")}</h4>
-          <nav className="flex flex-col items-center gap-2">
+          <nav className="flex flex-col items-center gap-3">
             {companyLinks.map((link, index) => (
               <Link
                 key={index * Date.now()}
                 href={link.href}
-                className="transition-all duration-300 hover:text-black"
+                className="navbar-item"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
         </article>
-        <article className="flex flex-col items-center justify-center gap-2 capitalize lg:justify-start">
+        <article className="flex flex-col items-center justify-center gap-3 capitalize lg:justify-start">
           <h4 className="font-semibold">{t("services.title")}</h4>
-          <nav className="flex flex-col items-center gap-2">
+          <nav className="flex flex-col items-center gap-3">
             {servicesLinks.map((link, index) => (
               <Link
                 key={index * Date.now()}
                 href={link.href}
-                className="transition-all duration-300 hover:text-black"
+                className="navbar-item"
               >
                 {link.label}
               </Link>

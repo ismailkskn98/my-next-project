@@ -1,5 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useTranslations } from "next-intl";
+import { useRef, useState } from "react";
 
 interface timeItems {
   title: string;
@@ -7,6 +10,7 @@ interface timeItems {
 }
 
 export default function Counter() {
+  const t = useTranslations("Home");
   const [timeLeft] = useState({
     days: "00",
     hours: "00",
@@ -15,20 +19,39 @@ export default function Counter() {
   });
 
   const timeItems: timeItems[] = [
-    { title: "Days", value: timeLeft.days },
-    { title: "Hours", value: timeLeft.hours },
-    { title: "Minutes", value: timeLeft.minutes },
-    { title: "Seconds", value: timeLeft.seconds },
+    { title: t("card.days"), value: timeLeft.days },
+    { title: t("card.hours"), value: timeLeft.hours },
+    { title: t("card.minutes"), value: timeLeft.minutes },
+    { title: t("card.seconds"), value: timeLeft.seconds },
   ];
 
+  const counterItemContainer = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".counter-item", {
+        x: 400,
+        opacity: 0,
+        delay: 0.8,
+        stagger: {
+          each: 0.2,
+        },
+      });
+    },
+    { scope: counterItemContainer },
+  );
+
   return (
-    <div className="flex items-center justify-center gap-4 sm:gap-7">
+    <div
+      ref={counterItemContainer}
+      className="flex items-center justify-center gap-4 sm:gap-7"
+    >
       {timeItems.map((item, index) => (
-        <div key={index} className="text-center">
+        <div key={index} className="counter-item text-center">
           <div className="relative text-[38px] font-bold sm:text-6xl">
             {item.value}
             {index + 1 !== timeItems.length && (
-              <span className="absolute -right-4 top-1/2 -translate-y-1/2 font-bold text-gray-800 sm:-right-6">
+              <span className="absolute -right-4 top-[40%] -translate-y-1/2 font-bold text-black/50 sm:-right-6">
                 :
               </span>
             )}

@@ -4,8 +4,7 @@ import FooterMain from "./FooterMain";
 
 export default function Footer() {
   return (
-    <footer className="fluid gridContainer bg-footerBg relative pt-20">
-      <div className="fluid absolute inset-x-0 -top-[10px] h-5 bg-white/50"></div>
+    <footer className="fluid gridContainer relative z-10 bg-black/25 bg-footerBg pt-20 text-white">
       <FooterMain />
       <Copyright />
     </footer>

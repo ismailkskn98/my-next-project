@@ -68,7 +68,7 @@ export default function RoadMap() {
   ];
 
   return (
-    <main className="relative z-20 mb-12 flex w-full flex-col gap-20 pt-16">
+    <main className="relative z-10 mb-12 mt-20 flex w-full flex-col gap-20 pt-16">
       <PageTitle title={t("pageTitle")} />
       <HorizontalTimeline milestones={milestones} />
       <VerticalTimelines milestones={milestones} />

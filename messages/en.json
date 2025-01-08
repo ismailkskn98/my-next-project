@@ -22,7 +22,21 @@
     "mobilContactTitle": "Cryptoland Just Entered the Real World",
     "mobilContactDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "card": {
+      "clockStopped": "The clock has stopped!",
+      "preSaleLive": "ICO pre-sale is live",
+      "endsIn": "Ends in:",
+      "preSale": "Pre-Sale",
+      "softCap": "Soft Cap",
+      "bonus": "Bonus",
+      "targetRaised": "{value} target raised",
+      "buyTokens": "BUY TOKENS",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
   },
   "RoadMap": {
     "pageTitle": "RoadMap",
@@ -130,5 +144,17 @@
       "noBorders": "no borders for international payments",
       "speed": "times faster transaction speed"
     }
+  },
+  "Team": {
+    "pageTitle": "Team"
+  },
+  "Blog": {
+    "pageTitle": "Blog"
+  },
+  "Contact": {
+    "pageTitle": "Contact"
+  },
+  "FAQ": {
+    "pageTitle": "Frequently Asked Questions"
   }
 }

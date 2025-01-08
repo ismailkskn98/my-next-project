@@ -5,6 +5,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useGsap } from "./use-gsap";
 import MobilContact from "./MobilContact";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function HomeImage() {
   const { elementRef, animate, reset } = useGsap({
@@ -32,6 +34,15 @@ export default function HomeImage() {
       window.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, [animate, reset]);
+
+  useGSAP(() => {
+    gsap.from(elementRef.current, {
+      x: -500,
+      opacity: 0,
+      duration: 0.8,
+      rotation: -360,
+    });
+  });
 
   return (
     <section className="flex flex-col items-center justify-center gap-10">

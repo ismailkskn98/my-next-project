@@ -99,6 +99,12 @@ body {
   }
 }
 
+@layer utilities {
+  .navbar-item {
+    @apply relative cursor-pointer text-nowrap rounded text-sm uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white lg:text-sm;
+  }
+}
+
 .vertical-timeline-element-content {
   position: relative;
   margin-left: 20px !important;

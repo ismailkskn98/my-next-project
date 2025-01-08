@@ -55,19 +55,16 @@ export default function Navbar() {
   return (
     <nav
       ref={navContainerRef}
-      className="font-raleway hidden min-h-11 flex-1 items-center gap-5 font-semibold lg:mx-3 lg:flex xl:mx-10"
+      className="hidden min-h-11 flex-1 items-center gap-5 font-raleway font-semibold lg:mx-3 lg:flex xl:mx-10"
     >
       {navItems.map((item, index) => {
         return (
           <div key={index} className="nav-item relative px-3 py-2">
             <Link
               href={item.path}
-              className={classNames(
-                "text-sx relative cursor-pointer text-nowrap rounded uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white lg:text-sm",
-                {
-                  "bg-black/20 backdrop-blur": pathname === item.path,
-                },
-              )}
+              className={classNames("navbar-item", {
+                "bg-black/20 backdrop-blur": pathname === "tr/" + item.path,
+              })}
             >
               {item.title}
             </Link>

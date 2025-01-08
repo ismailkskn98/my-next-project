@@ -1,8 +1,8 @@
 "use client";
+import { Link, NavPaths } from "@/i18n/routing";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { useRef } from "react";
 
 export default function AuthLink() {
@@ -20,20 +20,20 @@ export default function AuthLink() {
   return (
     <article
       ref={languageRef}
-      className="font-raleway ml-4 flex items-center gap-3 overflow-hidden text-sm font-semibold text-white"
+      className="ml-4 flex items-center gap-3 overflow-hidden font-raleway text-sm font-semibold text-white"
     >
       <Link
-        href="/login"
+        href={NavPaths.LOGIN}
         className="lg relative text-nowrap underline-offset-4 transition-all duration-200 hover:underline"
       >
         {t("login")}
       </Link>
-      {/* <Link
-        href="/register"
-        className="underline-offset-4 transition-all duration-200 hover:underline"
+      <Link
+        href={NavPaths.REGISTER}
+        className="text-nowrap underline-offset-4 transition-all duration-200 hover:underline"
       >
         {t("register")}
-      </Link> */}
+      </Link>
     </article>
   );
 }

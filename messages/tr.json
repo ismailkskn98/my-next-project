@@ -22,7 +22,21 @@
     "mobilContactTitle": "Cryptoland Gerçek Dünyaya Yeni Girdi",
     "mobilContactDescription": "Okuyucunun dikkatinin dağılacağı uzun süredir bilinen bir gerçektir. düzenine bakıldığında bir sayfanın okunabilir içeriği.",
     "about": "Hakkında",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "card": {
+      "clockStopped": "Saat durdu!",
+      "preSaleLive": "ICO ön satışı başladı",
+      "endsIn": "Bitiş:",
+      "preSale": "Ön Satış",
+      "softCap": "Soft Hedef",
+      "bonus": "Bonus",
+      "targetRaised": "Hedefin {value}’ı toplandı",
+      "buyTokens": "TOKEN SATIN AL",
+      "days": "Gün",
+      "hours": "Saat",
+      "minutes": "Dakika",
+      "seconds": "Saniye"
+    }
   },
   "RoadMap": {
     "pageTitle": "Yol Haritası",
@@ -130,5 +144,17 @@
       "noBorders": "uluslararası ödemeler için sınır yok",
       "speed": "kat daha hızlı işlem hızı"
     }
+  },
+  "Team": {
+    "pageTitle": "Takım"
+  },
+  "Blog": {
+    "pageTitle": "Blog"
+  },
+  "Contact": {
+    "pageTitle": "Iletisim"
+  },
+  "FAQ": {
+    "pageTitle": "Sıkça Sorulan Sorular"
   }
 }

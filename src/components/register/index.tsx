@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Formik, Form } from "formik";
 import registerSchema from "./registerSchema";

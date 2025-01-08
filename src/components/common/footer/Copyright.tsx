@@ -4,9 +4,9 @@ import { Link, NavPaths } from "@/i18n/routing";
 
 export default function Copyright() {
   return (
-    <section className="fluid gridContainer flex items-center justify-center bg-black/30">
+    <section className="fluid gridContainer flex items-center justify-center bg-black/40 py-2">
       <article className="row-start-1 row-end-4 flex min-h-10 flex-col items-center justify-center gap-3 text-white sm:flex-row">
-        <div className="flex items-center justify-center gap-1 text-black/50">
+        <div className="flex items-center justify-center gap-1 text-white/50">
           © All rights reserved. Made with
           <span>
             <FaRegHeart />
@@ -14,7 +14,7 @@ export default function Copyright() {
         </div>
         <Link
           href={NavPaths.HOME}
-          className="text-black/50 underline decoration-black underline-offset-4 transition-all duration-200 hover:text-black"
+          className="text-white/50 underline decoration-white underline-offset-4 transition-all duration-200 hover:text-white"
         >
           by C1Coin
         </Link>

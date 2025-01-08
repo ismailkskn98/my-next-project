@@ -1,5 +1,6 @@
+import Blog from "@/components/blog";
 import React from "react";
 
 export default function page() {
-  return <div>page</div>;
+  return <Blog />;
 }
