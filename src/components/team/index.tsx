@@ -2,7 +2,6 @@ import React from "react";
 import PageTitle from "../common/pageTitle";
 import { useTranslations } from "next-intl";
 import TeamMain from "./TeamMain";
-import Advisors from "./Advisors";
 
 export default function Team() {
   const t = useTranslations("Team");
@@ -16,7 +15,6 @@ export default function Team() {
         </p>
       </section>
       <TeamMain />
-      <Advisors />
     </main>
   );
 }
