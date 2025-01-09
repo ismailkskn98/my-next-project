@@ -19,7 +19,7 @@ export default function AboutContent() {
           </h2>
           <p>{t("runAnywhere.description")}</p>
         </div>
-        <div className="bebas-neue-regular group flex w-2/3 flex-col items-center justify-between gap-10 border-none bg-transparent text-5xl font-bold tracking-wider shadow-none outline-none hover:bg-transparent md:flex-row">
+        <div className="group flex w-2/3 flex-col items-center justify-between gap-4 border-none bg-transparent text-5xl font-bold tracking-wider shadow-none outline-none hover:bg-transparent md:flex-row">
           <span className="text-nowrap bg-gradient-to-r from-[#FEC057] to-[#ECB165] bg-clip-text font-bold text-transparent drop-shadow-lg">
             {t("buyTokens")}
           </span>

@@ -29,13 +29,13 @@ export default function MobilContact() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
             href={NavPaths.ABOUT}
-            className="inline-flex h-10 items-center justify-center rounded-md bg-[#774E1D]/80 px-8 text-sm font-medium capitalize text-white transition-colors hover:bg-[#774E1D]"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-[#F5E36C]/80 px-8 text-sm font-medium capitalize text-[#0f141d] transition-colors hover:bg-[#F5E36C]"
           >
             {t("about")}
           </Link>
           <Link
             href={NavPaths.CONTACT}
-            className="inline-flex h-10 items-center justify-center rounded-md bg-[#000000]/80 px-8 text-sm font-medium capitalize text-white transition-colors hover:bg-[#000000]"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-[#0f141d]/80 px-8 text-sm font-medium capitalize text-white transition-colors hover:bg-[#0f141d]"
           >
             {t("contact")}
           </Link>

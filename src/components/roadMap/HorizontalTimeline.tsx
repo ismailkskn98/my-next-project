@@ -1,17 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { Card, CardContent } from "../ui/card";
 import { cn } from "@/lib/utils";
 import { MilestoneItem } from ".";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HorizontalTimeline({
   milestones,
 }: {
   milestones: MilestoneItem[];
 }) {
+  const horizontalTimelineContainerRef = useRef<HTMLDivElement>(null);
+  console.log(horizontalTimelineContainerRef.current);
+  useGSAP(
+    () => {
+      gsap.from(".horizontal-timeline-item", {
+        x: 300,
+        opacity: 0,
+        stagger: {
+          each: 0.2,
+        },
+        scrollTrigger: {
+          trigger: horizontalTimelineContainerRef.current,
+          start: "top 70%",
+          end: "bottom center",
+          // scrub: 1,
+        },
+      });
+    },
+    { scope: horizontalTimelineContainerRef },
+  );
+
   return (
-    <div className="mx-auto hidden w-full py-16 lg:block">
+    <div
+      ref={horizontalTimelineContainerRef}
+      className="mx-auto hidden w-full py-16 lg:block"
+    >
       <div className="relative w-full">
         <div className="absolute left-0 right-0 top-1/2 h-0.5 w-full -translate-y-1/2 rounded-full bg-black/50" />
 
@@ -20,7 +49,7 @@ export default function HorizontalTimeline({
             <div
               key={index * Math.random()}
               className={cn(
-                "group relative lg:w-44 xl:w-56",
+                "horizontal-timeline-item group relative lg:w-44 xl:w-56",
                 index % 2 === 0 ? "md:pb-60" : "md:pt-60",
               )}
             >

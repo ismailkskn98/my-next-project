@@ -30,21 +30,19 @@ export default function VerticalTimelines({
               date={milestone.date}
               iconStyle={{
                 background: "rgb(var(--primary-rgb))",
-                color: "#000",
+                color: "#fff",
               }}
             >
               <div className="mb-4 flex items-center justify-between">
-                <h3 className="vertical-timeline-element-title md: text-lg font-bold">
+                <h3 className="vertical-timeline-element-title md: text-lg font-bold text-white">
                   {milestone.title}
                 </h3>
-                <div className="flex items-center font-semibold text-primary">
+                <div className="flex items-center font-semibold text-white/80">
                   <DollarSign className="h-4 w-4" />
                   <span>{milestone.value.replace("$", "")}</span>
                 </div>
               </div>
-              <p className="mt-2 text-muted-foreground">
-                {milestone.description}
-              </p>
+              <p className="mt-2 text-white/70">{milestone.description}</p>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

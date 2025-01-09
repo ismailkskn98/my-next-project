@@ -75,7 +75,7 @@ export default function RoadMap({ isHome = false }: { isHome?: boolean }) {
         {
           "relative z-10 mb-12 mt-20 flex w-full flex-col gap-14 pt-16":
             !isHome,
-          "mb:gap-0 relative z-10 mb-0 mt-20 flex w-full flex-col gap-10 pt-0":
+          "mb:gap-0 relative z-10 mb-0 mt-9 flex w-full flex-col gap-0 pt-0 lg:mt-20 lg:gap-10":
             isHome,
         },
       )}

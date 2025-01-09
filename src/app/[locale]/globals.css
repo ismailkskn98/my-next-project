@@ -10,7 +10,7 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 #root {
@@ -108,7 +108,8 @@ body {
 .vertical-timeline-element-content {
   position: relative;
   margin-left: 20px !important;
-  background: rgb(255 255 255 / 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: none !important;
@@ -130,7 +131,7 @@ body {
   left: -25px !important;
   height: 98% !important;
   width: 4px !important;
-  background: rgb(255 255 255 / 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .vertical-timeline-element-icon {
@@ -138,13 +139,25 @@ body {
   top: 3% !important;
   left: -4% !important;
   width: 30px !important;
-  height: 3px !important;
+  height: 2px !important;
   border-radius: 0px !important;
-  border: 1px solid rgba(255, 255, 255, 1) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
   box-shadow: none !important;
 }
 
+.vertical-timeline-element-date {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
 @media screen and (max-width: 650px) {
+  .vertical-timeline {
+    width: 87% !important;
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    padding: 1.3em 0 !important;
+    float: right !important;
+  }
   .vertical-timeline-element-icon {
     left: -6% !important;
   }

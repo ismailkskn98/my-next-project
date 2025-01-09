@@ -10,7 +10,7 @@ export default function About() {
   return (
     <main className="relative z-10 mt-20 flex w-full flex-col gap-20 pb-12 pt-16">
       <PageTitle title={t("pageTitle")} />
-      <section className="mx-auto flex w-full flex-col items-center justify-center py-8 text-white lg:w-10/12 lg:flex-row">
+      <section className="mx-auto flex w-full flex-col items-center justify-center gap-3 py-8 text-white lg:flex-row 2xl:w-10/12">
         <AboutContent />
         <AboutImage />
       </section>

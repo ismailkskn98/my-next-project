@@ -12,7 +12,7 @@ const CustomInput: React.FC<CustomInputProps> = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <div className="mb-4">
+    <div className="w-full">
       <label
         htmlFor={props.name}
         className="block text-sm font-medium text-gray-700"

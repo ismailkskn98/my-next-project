@@ -21,21 +21,21 @@ export default function FooterMain() {
   ];
 
   return (
-    <section className="mx-auto flex w-full flex-col items-center justify-around gap-10 py-12 sm:w-10/12 sm:px-4 md:w-9/12 lg:w-full lg:flex-row lg:items-start lg:gap-5">
-      <article className="flex w-full flex-col items-center justify-center gap-8 sm:flex-row lg:flex-col lg:items-start">
-        <div className="flex flex-col items-start gap-2">
+    <section className="mx-auto flex w-full flex-col items-center justify-around gap-10 py-12 sm:w-10/12 sm:px-4 md:w-9/12 lg:w-full lg:flex-row lg:items-start lg:justify-between lg:gap-5">
+      <article className="flex flex-col items-center justify-center gap-8 sm:flex-row lg:flex-col lg:items-start">
+        <div className="flex flex-col items-center gap-2 sm:items-start">
           <div className="flex items-center gap-1">
             <span>{t("contact.city")}</span>
             <p className="">{t("contact.phone")}</p>
           </div>
           <a href={`hrefto:${t("contact.email")}`}>{t("contact.email")}</a>
         </div>
-        <div className="flex flex-col items-start gap-2 capitalize">
+        <div className="flex flex-col items-center gap-2 capitalize sm:items-start">
           <p>{t("workingHours.weekday")}</p>
           <p>{t("workingHours.sunday")}</p>
         </div>
       </article>
-      <section className="flex w-full flex-col items-center justify-around sm:flex-row lg:items-start lg:justify-between lg:gap-5">
+      <section className="flex w-full flex-col items-center justify-around sm:flex-row lg:w-1/3 lg:items-start lg:justify-between lg:gap-5">
         <article className="flex flex-col items-center gap-3 capitalize">
           <h4 className="font-semibold">{t("company.title")}</h4>
           <nav className="flex flex-col items-center gap-3">
@@ -65,17 +65,20 @@ export default function FooterMain() {
           </nav>
         </article>
       </section>
-      <article className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row sm:items-end lg:flex-col lg:justify-start">
-        <div className="flex flex-col gap-2">
+      <article className="flex flex-col gap-4 sm:flex-row sm:items-end lg:flex-col lg:items-start lg:justify-start">
+        <div className="flex flex-col items-center gap-2 sm:items-start">
           <p className="capitalize">{t("newsletter.title")}</p>
           <p>{t("newsletter.subtitle")}</p>
         </div>
-        <a href="#" className="group flex items-center gap-2">
-          <MdEmail className="text-black transition-all duration-300 group-hover:text-white" />
+        <a
+          href="#"
+          className="group flex items-center justify-center gap-2 sm:justify-start"
+        >
+          <MdEmail className="text-white transition-all duration-300 group-hover:text-white" />
           <span className="transition-all duration-300 group-hover:text-black">
             {t("newsletter.emailPlaceholder")}
           </span>
-          <GrSend className="text-black transition-all duration-300 group-hover:text-white" />
+          <GrSend className="text-white transition-all duration-300 group-hover:text-white" />
         </a>
       </article>
     </section>

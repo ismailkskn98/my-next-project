@@ -44,7 +44,7 @@ const Register: React.FC = () => {
             validationSchema={registerSchema}
             onSubmit={handleSubmit}
           >
-            <Form className="space-y-6">
+            <Form className="flex flex-col items-start gap-3">
               <CustomInput
                 name="firstName"
                 label="Ad"
@@ -74,12 +74,6 @@ const Register: React.FC = () => {
                 label="Şifre Tekrarı"
                 type="password"
                 placeholder="********"
-              />
-              <CustomInput
-                name="phoneNumber"
-                label="Telefon Numarası"
-                type="tel"
-                placeholder="5xxxxxxxxx"
               />
 
               <div>

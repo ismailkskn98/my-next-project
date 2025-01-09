@@ -10,8 +10,8 @@ import gsap from "gsap";
 
 export default function HomeImage() {
   const { elementRef, animate, reset } = useGsap({
-    x: 0.3,
-    y: 0.3,
+    x: 1,
+    y: 1,
     rotation: 0.9,
     scale: 0.001,
     duration: 0.6,
@@ -54,7 +54,7 @@ export default function HomeImage() {
           height={400}
           quality={100}
           priority
-          className="h-auto max-h-[400px] drop-shadow-2xl"
+          className="h-auto max-h-[400px] shadow-[#EAC04A] drop-shadow-2xl"
           ref={elementRef}
         />
       </article>

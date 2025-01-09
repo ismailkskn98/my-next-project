@@ -26,7 +26,7 @@ export default function Logo() {
           priority
           src="/images/logo.png"
           alt="c1coin logo"
-          className="relative h-auto"
+          className="relative h-auto shadow-[#EAC04A] drop-shadow-2xl"
         />
       </Link>
     </article>
