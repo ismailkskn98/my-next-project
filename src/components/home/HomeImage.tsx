@@ -45,7 +45,7 @@ export default function HomeImage() {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center gap-10">
+    <section className="mx-auto flex flex-col items-center justify-center gap-10 lg:mx-0">
       <article className="hidden lg:block">
         <Image
           alt="c1coin logo"

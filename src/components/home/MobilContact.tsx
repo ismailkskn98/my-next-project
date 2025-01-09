@@ -18,7 +18,7 @@ export default function MobilContact() {
   });
 
   return (
-    <section className="flex items-center justify-center bg-transparent px-4 text-center text-white">
+    <section className="mx-auto flex items-center justify-center bg-transparent px-4 text-center text-white lg:mx-0">
       <div ref={elementRef} className="max-w-3xl space-y-6">
         <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
           {t("mobilContactTitle")}

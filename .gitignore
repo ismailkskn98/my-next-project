@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+.idea/
+.İdea/
+.Idea/
+
 # next.js
 /.next/
 /out/

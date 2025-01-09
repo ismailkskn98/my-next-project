@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import PageTitle from "../common/pageTitle";
 import HorizontalTimeline from "./HorizontalTimeline";
 import VerticalTimelines from "./VerticalTimeline";
+import classNames from "classnames";
 
 export interface MilestoneItem {
   id: string;
@@ -13,7 +14,7 @@ export interface MilestoneItem {
   value: string;
 }
 
-export default function RoadMap() {
+export default function RoadMap({ isHome = false }: { isHome?: boolean }) {
   const t = useTranslations("RoadMap");
   const milestones: MilestoneItem[] = [
     {
@@ -68,7 +69,17 @@ export default function RoadMap() {
   ];
 
   return (
-    <main className="relative z-10 mb-12 mt-20 flex w-full flex-col gap-20 pt-16">
+    <main
+      className={classNames(
+        "relative z-10 mb-12 mt-20 flex w-full flex-col pt-16",
+        {
+          "relative z-10 mb-12 mt-20 flex w-full flex-col gap-14 pt-16":
+            !isHome,
+          "mb:gap-0 relative z-10 mb-0 mt-20 flex w-full flex-col gap-10 pt-0":
+            isHome,
+        },
+      )}
+    >
       <PageTitle title={t("pageTitle")} />
       <HorizontalTimeline milestones={milestones} />
       <VerticalTimelines milestones={milestones} />
