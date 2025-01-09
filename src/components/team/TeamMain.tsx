@@ -11,7 +11,7 @@ export default function TeamMain() {
             <h3 className="font-raleway text-3xl font-extrabold uppercase">
               Who are we
             </h3>
-            <p className="relative ml-4 text-teal-600 before:absolute before:-left-4 before:top-1/2 before:h-[2px] before:w-[10px] before:translate-y-[-50%] before:bg-white/70 before:content-['']">
+            <p className="relative ml-4 text-yellow-300 before:absolute before:-left-4 before:top-1/2 before:h-[2px] before:w-[10px] before:translate-y-[-50%] before:bg-white/70 before:content-['']">
               Meet the Entire Team
             </p>
           </div>

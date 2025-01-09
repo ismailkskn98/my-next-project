@@ -12,20 +12,20 @@ interface CustomInputProps {
 export function CustomInput({ label, ...props }: CustomInputProps) {
   const [field, meta] = useField(props);
   return (
-    <div className="w-full">
+    <div className="flex min-h-[117px] w-full flex-col gap-2">
       <Label
         htmlFor={props.name}
-        className="mb-1 block text-sm font-medium text-gray-200"
+        className="block text-base font-medium text-gray-200"
       >
         {label}
       </Label>
       <Input
         {...field}
         {...props}
-        className="w-full flex-1 border-black/70 bg-black/40 text-white"
+        className="h-min max-h-14 w-full flex-1 border-black/70 bg-white/10 px-3 py-4 text-white"
       />
       {meta.touched && meta.error ? (
-        <div className="mt-1 text-xs text-red-500">{meta.error}</div>
+        <div className="mt-1 text-sm text-red-500">{meta.error}</div>
       ) : null}
     </div>
   );

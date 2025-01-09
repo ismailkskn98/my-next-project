@@ -7,7 +7,7 @@ export default function AboutImage() {
       <Image
         src="/images/570x570.jpg"
         alt="about image"
-        className="h-auto w-auto drop-shadow-2xl"
+        className="h-auto w-auto rounded-lg brightness-75 drop-shadow-2xl"
         width={500}
         height={500}
       />

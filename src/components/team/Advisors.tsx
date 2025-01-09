@@ -8,10 +8,10 @@ export default function Advisors() {
         Advisors
       </h2>
       <div className="mx-auto grid w-full grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        <AdvisorsItem name="Kişi İsmi" src="/images/570x570.jpg" />
-        <AdvisorsItem name="Kişi İsmi" src="/images/570x570.jpg" />
-        <AdvisorsItem name="Kişi İsmi" src="/images/570x570.jpg" />
-        <AdvisorsItem name="Kişi İsmi" src="/images/570x570.jpg" />
+        <AdvisorsItem job="İş" name="Kişi İsmi" src="/images/570x570.jpg" />
+        <AdvisorsItem job="İş" name="Kişi İsmi" src="/images/570x570.jpg" />
+        <AdvisorsItem job="İş" name="Kişi İsmi" src="/images/570x570.jpg" />
+        <AdvisorsItem job="İş" name="Kişi İsmi" src="/images/570x570.jpg" />
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { FaPlay } from "react-icons/fa";
+import Link from "next/link";
 
 export default function AboutContent() {
   const t = useTranslations("About");
@@ -19,26 +20,21 @@ export default function AboutContent() {
           </h2>
           <p>{t("runAnywhere.description")}</p>
         </div>
-        <div className="group flex w-2/3 flex-col items-center justify-between gap-4 border-none bg-transparent text-5xl font-bold tracking-wider shadow-none outline-none hover:bg-transparent md:flex-row">
-          <span className="text-nowrap bg-gradient-to-r from-[#FEC057] to-[#ECB165] bg-clip-text font-bold text-transparent drop-shadow-lg">
-            {t("buyTokens")}
-          </span>
-          <div className="flex items-center gap-3">
-            <Button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEC057] transition-all duration-300 group-hover:bg-white">
-              <FaPlay
-                className={`min-h-6 min-w-6 transition-all duration-300 group-hover:text-black`}
-              />
-            </Button>
-            <div className="flex flex-col gap-1">
-              <span className="text-xs font-semibold">
-                {t("watchVideo.title")}
-              </span>
-              <span className="text-[8px] font-semibold">
-                {t("watchVideo.subtitle")}
-              </span>
-            </div>
+        <Link href="#" className="flex items-center gap-3">
+          <Button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FEC057] transition-all duration-300 group-hover:bg-white">
+            <FaPlay
+              className={`min-h-6 min-w-6 transition-all duration-300 group-hover:text-black`}
+            />
+          </Button>
+          <div className="flex flex-col capitalize">
+            <span className="text-sm font-semibold">
+              {t("watchVideo.title")}
+            </span>
+            <span className="text-xs font-semibold text-white/70">
+              {t("watchVideo.subtitle")}
+            </span>
           </div>
-        </div>
+        </Link>
         <div
           className={`min-h-5 w-1/2 self-center rounded-xl border-b-8 border-solid border-black/50 shadow-xl`}
         ></div>

@@ -1,20 +1,20 @@
 .cardBgTop {
   background: rgb(192, 120, 37);
-  background: linear-gradient(0deg, #1e293b 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #0b0b0b 0, rgba(255, 255, 255, 0) 100%);
 }
 
 .cardBgBottom {
   background: rgb(192, 120, 37);
-  background: linear-gradient(180deg, #1e293b 0%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(180deg, #0b0b0b 0, rgba(255, 255, 255, 0) 30%);
 }
 
 .cardBgLeft {
   background: rgb(192, 120, 37);
-  background: linear-gradient(90deg, #1e293b 0%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(90deg, #0b0b0b 0, rgba(255, 255, 255, 0) 30%);
 }
 .cardBgRight {
   background: rgb(192, 120, 37);
-  background: linear-gradient(270deg, #1e293b 0%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(270deg, #0b0b0b 0, rgba(255, 255, 255, 0) 30%);
 }
 
 .titleShadow {

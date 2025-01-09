@@ -12,8 +12,8 @@ export default function HomeImage() {
   const { elementRef, animate, reset } = useGsap({
     x: 1,
     y: 1,
-    rotation: 0.9,
-    scale: 0.001,
+    rotation: 1.5,
+    scale: 0.002,
     duration: 0.6,
   });
 

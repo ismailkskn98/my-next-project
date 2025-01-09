@@ -63,14 +63,14 @@ const faqData = [
 export default function FaqMain() {
   return (
     <div className="p-4 text-white md:p-8">
-      <div className="mx-auto space-y-8">
-        <Tabs defaultValue="regular" className="w-full">
-          <TabsList className="bg-transparent">
+      <div className="mx-auto space-y-12">
+        <Tabs defaultValue="regular" className="w-full space-y-8">
+          <TabsList className="w-full justify-center bg-transparent lg:justify-start">
             {faqData.map((tab) => (
               <TabsTrigger
                 key={tab.category}
                 value={tab.category}
-                className="border-b-2 border-transparent bg-transparent px-3 pb-2 font-medium text-white/80"
+                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-xs font-medium text-white/80 sm:px-3 sm:text-sm"
               >
                 {tab.title}
               </TabsTrigger>
@@ -90,10 +90,10 @@ export default function FaqMain() {
                     value={item.id}
                     className="border-none"
                   >
-                    <AccordionTrigger className="rounded-lg bg-black/50 px-6 py-4 text-left hover:bg-black/60">
+                    <AccordionTrigger className="rounded-lg bg-white/10 px-1 py-4 text-left hover:bg-white/20 sm:px-6">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-6 py-4 text-gray-300">
+                    <AccordionContent className="bg-white/5 px-1 py-4 text-gray-300 sm:px-6">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>

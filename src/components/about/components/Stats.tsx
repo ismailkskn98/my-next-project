@@ -71,7 +71,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
     <div
       ref={statsContainerRef}
       className={classNames(
-        "mx-auto grid min-h-[108px] grid-cols-2 gap-x-5 gap-y-7 text-white sm:gap-x-7 sm:gap-y-12 md:grid-cols-4 md:gap-y-7",
+        "mx-auto grid min-h-[108px] w-full grid-cols-2 gap-x-5 gap-y-7 text-white sm:gap-x-7 sm:gap-y-12 md:grid-cols-4 md:gap-y-7",
         {
           "w-10/12": !isHome,
           "w-full": isHome,

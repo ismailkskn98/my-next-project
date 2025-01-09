@@ -5,13 +5,7 @@ import * as Yup from "yup";
 
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { toast } from "sonner";
 import { CustomInput } from "./CustomInput";
 
@@ -52,12 +46,9 @@ export default function ContactMain() {
     <div className="text-whie flex w-full items-center justify-center p-4">
       <Card className="w-full border-none bg-transparent shadow-none outline-none ring-0">
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-bold">
-            İletişim
-          </CardTitle>
-          <CardDescription className="text-center text-gray-400">
+          <CardTitle className="mx-auto mb-6 w-full max-w-[800px] text-center font-raleway text-4xl font-bold text-white lg:text-start">
             Bize ulaşın
-          </CardDescription>
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <Formik
@@ -66,8 +57,8 @@ export default function ContactMain() {
             onSubmit={handleSubmit}
           >
             {({ isSubmitting, errors, touched }) => (
-              <Form className="mx-auto flex w-full max-w-[600px] flex-col items-start gap-5">
-                <div className="flex w-full items-center gap-3">
+              <Form className="mx-auto flex w-full max-w-[800px] flex-col items-start gap-8">
+                <div className="flex w-full items-center gap-5">
                   <CustomInput name="name" label="İsim" placeholder="Adınız" />
                   <CustomInput
                     name="email"
@@ -76,10 +67,10 @@ export default function ContactMain() {
                     placeholder="ornek@email.com"
                   />
                 </div>
-                <div className="w-full">
+                <div className="flex w-full flex-col gap-2">
                   <label
                     htmlFor="message"
-                    className="mb-1 block text-sm font-medium text-gray-200"
+                    className="mb-1 block text-base font-medium text-gray-200"
                   >
                     Mesaj
                   </label>
@@ -87,7 +78,7 @@ export default function ContactMain() {
                     id="message"
                     name="message"
                     placeholder="Mesajınız..."
-                    className="w-full border-gray-600 bg-black/40 text-white focus:border-blue-500 focus:ring-blue-500"
+                    className="h-40 w-full resize-none border-none bg-white/10 px-3 py-4 text-base tracking-wide text-white"
                   />
                   {errors.message && touched.message ? (
                     <div className="mt-1 text-xs text-red-500">
@@ -98,7 +89,7 @@ export default function ContactMain() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded px-4 py-2 font-bold text-white transition duration-300"
+                  className="self-end rounded px-8 py-6 font-bold text-white transition duration-300 hover:bg-white/20"
                 >
                   {isSubmitting ? "Gönderiliyor..." : "Gönder"}
                 </Button>
