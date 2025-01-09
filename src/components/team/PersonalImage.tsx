@@ -8,7 +8,7 @@ export default function PersonalImage({
   src,
 }: {
   name: string;
-  job: string;
+  job?: string;
   src: string;
 }) {
   return (
