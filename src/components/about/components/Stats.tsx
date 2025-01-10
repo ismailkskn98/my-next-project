@@ -58,8 +58,8 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         },
         scrollTrigger: {
           trigger: statsContainerRef.current,
-          start: "top 70%",
-          end: "bottom center",
+          start: "top 80%",
+          end: "bottom 70%",
           onEnter: () => setStateVisible(true),
         },
       });
@@ -71,7 +71,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
     <div
       ref={statsContainerRef}
       className={classNames(
-        "mx-auto grid min-h-[108px] w-full grid-cols-2 gap-x-5 gap-y-7 text-white sm:gap-x-7 sm:gap-y-12 md:grid-cols-4 md:gap-y-7",
+        "mx-auto grid min-h-[108px] w-full grid-cols-2 place-items-center gap-x-5 gap-y-7 text-white sm:gap-x-7 sm:gap-y-12 md:grid-cols-4 md:gap-y-7",
         {
           "w-10/12": !isHome,
           "w-full": isHome,
@@ -82,7 +82,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         statsData.map((item) => (
           <div
             key={item.id}
-            className="stats-item flex w-full max-w-64 flex-col items-center justify-center gap-2 rounded-xl bg-black/10 px-20 py-14 backdrop-blur"
+            className="stats-item flex w-full max-w-64 flex-col items-center justify-center gap-2 rounded-xl bg-black/10 py-14 backdrop-blur"
           >
             <div className="flex items-end">
               <CountUp
@@ -95,7 +95,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
                 {item.unit}
               </span>
             </div>
-            <p className="line-clamp-2 max-w-36 text-wrap text-center text-sm tracking-wide text-white/80 sm:text-base md:max-w-48">
+            <p className="max-w-36 text-wrap text-center text-sm tracking-wide text-white/80 sm:text-base md:max-w-48">
               {t(item.translationKey)}
             </p>
           </div>

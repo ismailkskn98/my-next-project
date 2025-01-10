@@ -71,7 +71,8 @@ export default function RoadMap({ isHome = false }: { isHome?: boolean }) {
   return (
     <main
       className={classNames("relative z-10 mb-12 mt-20 flex w-full flex-col", {
-        "relative z-10 mb-12 mt-20 flex w-full flex-col gap-14 pt-16": !isHome,
+        "relative z-10 mb-12 mt-14 flex w-full flex-col gap-7 pt-8 sm:gap-10 sm:pt-12 md:pt-14 lg:mt-20 lg:gap-14 lg:pt-16":
+          !isHome,
         "mb:gap-0 relative z-10 mb-0 mt-9 flex w-full flex-col gap-0 pt-0 lg:mt-20 lg:gap-2":
           isHome,
       })}

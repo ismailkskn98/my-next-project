@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import classNames from "classnames";
 
 // FAQ verilerini tanımlayın
 const faqData = [
@@ -60,17 +61,22 @@ const faqData = [
   },
 ];
 
-export default function FaqMain() {
+export default function FaqMain({ isHome = false }: { isHome: boolean }) {
   return (
-    <div className="p-4 text-white md:p-8">
+    <div className="w-full p-4 text-white md:p-8">
       <div className="mx-auto space-y-12">
         <Tabs defaultValue="regular" className="w-full space-y-8">
-          <TabsList className="w-full justify-center bg-transparent lg:justify-start">
+          <TabsList
+            className={classNames("w-full items-center bg-transparent", {
+              "justify-center lg:justify-start": !isHome,
+              "justify-center lg:justify-center": isHome,
+            })}
+          >
             {faqData.map((tab) => (
               <TabsTrigger
                 key={tab.category}
                 value={tab.category}
-                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-xs font-medium text-white/80 sm:px-3 sm:text-sm"
+                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-xs font-medium text-white/90 sm:px-3 sm:text-sm"
               >
                 {tab.title}
               </TabsTrigger>
@@ -90,10 +96,10 @@ export default function FaqMain() {
                     value={item.id}
                     className="border-none"
                   >
-                    <AccordionTrigger className="rounded-lg bg-white/10 px-1 py-4 text-left hover:bg-white/20 sm:px-6">
+                    <AccordionTrigger className="rounded-lg bg-white/5 px-4 py-4 text-left hover:bg-white/20 sm:px-6">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="bg-white/5 px-1 py-4 text-gray-300 sm:px-6">
+                    <AccordionContent className="rounded-lg bg-white/10 px-4 py-4 leading-6 text-gray-300 sm:px-6">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>

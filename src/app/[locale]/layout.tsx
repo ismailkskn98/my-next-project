@@ -66,17 +66,13 @@ const tajawalFont = localFont({
   variable: "--tajawal-font",
 });
 
-export default async function RootLayout(
-  props: {
-    children: React.ReactNode;
-    params: Promise<{ locale: string }>;
-  }
-) {
+export default async function RootLayout(props: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
   const params = await props.params;
 
-  const {
-    children
-  } = props;
+  const { children } = props;
 
   const { locale } = params;
 
@@ -89,7 +85,7 @@ export default async function RootLayout(
   return (
     <html lang={locale} className="h-full w-full">
       <body
-        className={`h-full w-full ${ralewayFont.variable} ${tajawalFont.variable}`}
+        className={`h-full w-full bg-black ${ralewayFont.variable} ${tajawalFont.variable}`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

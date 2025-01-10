@@ -8,7 +8,7 @@ import Logo from "./Logo";
 export default function Header() {
   return (
     <header className="fluid gridContainer relative z-10 space-y-3 bg-black/25">
-      <section className="fluid gridContainer span-row-3 w-full bg-white/5 px-1 pt-1 backdrop-blur-sm lg:hidden">
+      <section className="fluid gridContainer span-row-3 w-full bg-white/5 px-1 pb-2 pt-3 backdrop-blur-sm lg:hidden">
         <article className="flex w-full items-center justify-end gap-2">
           <Language />
           <AuthLink />

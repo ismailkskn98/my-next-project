@@ -24,11 +24,11 @@ export default function PageTitle({ title, isFaq, isHome }: PageTitleProps) {
       <div className="relative flex w-full items-center justify-center">
         <h2
           className={classNames(
-            "before:text-logoGold/10 relative z-10 text-nowrap font-raleway text-4xl font-extrabold text-white before:absolute before:left-1/2 before:top-1/4 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:font-raleway before:font-extrabold before:content-[var(--title)] after:absolute after:-bottom-3 after:left-1/2 after:h-[2px] after:w-20 after:-translate-x-1/2 after:bg-white/70 after:content-[''] md:text-4xl lg:text-5xl xl:text-6xl",
+            "before:text-logoGold/10 relative z-10 text-nowrap font-raleway font-extrabold text-white before:absolute before:left-1/2 before:top-1/4 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:font-raleway before:font-extrabold before:content-[var(--title)] after:absolute after:-bottom-3 after:left-1/2 after:h-[2px] after:w-20 after:-translate-x-1/2 after:bg-white/70 after:content-['']",
             {
-              "sm:before:text-7xl md:before:text-8xl lg:before:text-9xl":
+              "text-4xl before:text-6xl sm:before:text-7xl md:text-4xl md:before:text-8xl lg:text-5xl lg:before:text-9xl xl:text-6xl":
                 !isFaq,
-              "before:text-2xl sm:before:text-5xl md:before:text-6xl xl:before:text-8xl":
+              "text-3xl before:text-3xl sm:before:text-5xl md:before:text-6xl xl:before:text-8xl":
                 isFaq,
               "page-title": !isHome,
               "text-white": isHome,

@@ -43,7 +43,7 @@ export default function ContactMain() {
   };
 
   return (
-    <div className="text-whie flex w-full items-center justify-center p-4">
+    <div className="text-whie flex w-full items-center justify-center">
       <Card className="w-full border-none bg-transparent shadow-none outline-none ring-0">
         <CardHeader>
           <CardTitle className="mx-auto mb-6 w-full max-w-[800px] text-center font-raleway text-4xl font-bold text-white lg:text-start">
@@ -57,8 +57,8 @@ export default function ContactMain() {
             onSubmit={handleSubmit}
           >
             {({ isSubmitting, errors, touched }) => (
-              <Form className="mx-auto flex w-full max-w-[800px] flex-col items-start gap-8">
-                <div className="flex w-full items-center gap-5">
+              <Form className="mx-auto flex w-full flex-col items-start gap-8 px-0 md:max-w-[800px]">
+                <div className="flex w-full flex-col items-start gap-5 md:flex-row md:items-center">
                   <CustomInput name="name" label="İsim" placeholder="Adınız" />
                   <CustomInput
                     name="email"

@@ -48,15 +48,15 @@ export default function MobilNav() {
               width={60}
               height={50}
               alt="c1coin logo"
-              className="h-full max-h-[45] w-full max-w-[55px]"
+              className="h-full max-h-[41] w-full max-w-[51px]"
             />
-            <span className="text-logoGold text-nowrap font-raleway text-3xl">
+            <span className="text-logoGold text-nowrap font-raleway text-[28px]">
               C1 COIN
             </span>
           </SheetTitle>
         </SheetHeader>
         <main className="row-span-4">
-          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-4 text-lg">
+          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-5 text-lg">
             {navItems.map((item, index) => {
               return (
                 <SheetTrigger key={index} asChild>
