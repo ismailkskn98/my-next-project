@@ -37,7 +37,7 @@ export default function Language() {
   return (
     <article
       ref={languageSelectRef}
-      className="font-raleway flex max-w-28 items-center justify-end gap-3 font-semibold"
+      className="flex max-w-28 items-center justify-end gap-3 font-raleway font-semibold"
     >
       <Select
         defaultValue={locale}
@@ -54,35 +54,38 @@ export default function Language() {
           });
         }}
       >
-        <SelectTrigger className="justify-between gap-2 border-none text-white shadow-none outline-none xl:gap-4">
+        <SelectTrigger className="justify-between gap-2 border-none text-xs text-white shadow-none outline-none lg:text-base xl:gap-4">
           <SelectValue placeholder="" />
         </SelectTrigger>
-        <SelectContent className="max-h-[200px] !overflow-visible overflow-y-auto">
+        <SelectContent className="border-logoGold max-h-[200px] !overflow-visible overflow-y-auto bg-black/50 backdrop-blur-sm">
           <SelectGroup>
             <SelectLabel className="pointer-events-none mb-2 text-center text-sm text-gray-400">
               {t("language")}
             </SelectLabel>
-            <SelectItem value="en">
-              <div className="flex items-center gap-1 xl:gap-2">
+            <SelectItem value="en" className="text-white">
+              <div className="flex items-center gap-1 text-sm lg:text-base xl:gap-2">
                 <Image
                   src={"/images/ingilizce.jpg"}
                   alt="english"
                   width={30}
                   height={30}
-                  className="h-6 w-6 rounded-full border border-solid border-neutral-500 object-cover object-center"
+                  className="border-logoGold-100 h-5 w-5 rounded-full border border-solid object-cover object-center lg:h-6 lg:w-6"
                 />
                 <span>EN</span>
               </div>
             </SelectItem>
-            <SelectItem value="tr">
-              <div className="flex items-center gap-1 xl:gap-2">
+            <SelectItem
+              value="tr"
+              className="hover:bg-logoGold text-white transition-all duration-200"
+            >
+              <div className="flex items-center gap-1 text-sm lg:text-base xl:gap-2">
                 <Image
                   src={"/images/turkce.jpg"}
                   alt="türkçe"
                   width={20}
                   height={20}
                   quality={100}
-                  className="h-6 w-6 rounded-full border border-solid border-neutral-500 object-cover object-center"
+                  className="h-5 w-5 rounded-full border border-solid border-neutral-500 object-cover object-center lg:h-6 lg:w-6"
                 />
                 <span>TR</span>
               </div>

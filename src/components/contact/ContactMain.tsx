@@ -81,7 +81,7 @@ export default function ContactMain() {
                     className="h-40 w-full resize-none border-none bg-white/10 px-3 py-4 text-base tracking-wide text-white"
                   />
                   {errors.message && touched.message ? (
-                    <div className="mt-1 text-xs text-red-500">
+                    <div className="mt-1 text-sm text-red-500">
                       {errors.message}
                     </div>
                   ) : null}

@@ -45,16 +45,16 @@ export default function HomeImage() {
   });
 
   return (
-    <section className="mx-auto flex flex-col items-center justify-center gap-10 lg:mx-0">
-      <article className="hidden lg:block">
+    <section className="mx-auto flex flex-col items-center justify-center lg:mx-0 lg:gap-10">
+      <article className="hidden h-min w-min lg:block">
         <Image
           alt="c1coin logo"
           src="/images/logo.png"
-          width={400}
-          height={400}
+          width={380}
+          height={380}
           quality={100}
           priority
-          className="h-auto max-h-[400px] shadow-[#EAC04A] drop-shadow-2xl"
+          className="xl-max-w-[380px] h-auto shadow-[#EAC04A] drop-shadow-2xl lg:max-h-[350px] lg:max-w-[350px] xl:max-h-[380px]"
           ref={elementRef}
         />
       </article>

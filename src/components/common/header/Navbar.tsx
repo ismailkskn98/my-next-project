@@ -4,38 +4,28 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import classNames from "classnames";
-import { usePathname } from "next/navigation";
-import { Link } from "@/i18n/routing";
+import { Link, NavPaths, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export type NavItemType = {
   title: string;
-  path: string;
+  path: NavPaths;
 };
 
-export enum NavPaths {
-  HOME = "/",
-  ABOUT = "/about",
-  ROADMAP = "/road-map",
-  TOKEN = "/token",
-  TEAM = "/team",
-  FAQ = "/faq",
-  BLOG = "/blog",
-  CONTACT = "/contact",
-}
-
 export default function Navbar() {
+  const t = useTranslations("Header");
   const navContainerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
-  const navItems = [
-    { path: NavPaths.HOME, title: "Home" },
-    { path: NavPaths.ABOUT, title: "About" },
-    { path: NavPaths.ROADMAP, title: "Roadmap" },
-    { path: NavPaths.TOKEN, title: "Token" },
-    { path: NavPaths.TEAM, title: "Team" },
-    { path: NavPaths.FAQ, title: "FAQ" },
-    { path: NavPaths.BLOG, title: "Blog" },
-    { path: NavPaths.CONTACT, title: "Contact" },
+  const navItems: NavItemType[] = [
+    { path: NavPaths.HOME, title: t("nav.home") },
+    { path: NavPaths.ABOUT, title: t("nav.about") },
+    { path: NavPaths.ROADMAP, title: t("nav.roadmap") },
+    { path: NavPaths.TOKEN, title: t("nav.token") },
+    { path: NavPaths.TEAM, title: t("nav.team") },
+    { path: NavPaths.FAQ, title: t("nav.faq") },
+    { path: NavPaths.BLOG, title: t("nav.blog") },
+    { path: NavPaths.CONTACT, title: t("nav.contact") },
   ];
 
   useGSAP(
@@ -55,15 +45,17 @@ export default function Navbar() {
   return (
     <nav
       ref={navContainerRef}
-      className="hidden min-h-11 flex-1 items-center gap-5 font-raleway font-semibold lg:mx-3 lg:flex xl:mx-10"
+      className="hidden min-h-11 flex-1 items-center gap-2 font-raleway font-semibold lg:mx-2 lg:flex xl:mx-10"
     >
       {navItems.map((item, index) => {
         return (
-          <div key={index} className="nav-item relative px-3 py-2">
+          <div key={index} className="nav-item relative px-2 py-2 xl:px-3">
             <Link
               href={item.path}
-              className={classNames("navbar-item", {
-                "bg-black/20 backdrop-blur": pathname === "tr/" + item.path,
+              className={classNames("", {
+                "bg-logoGold rounded-sm px-3 py-2 text-sm font-medium text-black backdrop-blur-sm hover:text-black xl:text-base":
+                  pathname === item.path,
+                "navbar-item": pathname !== item.path,
               })}
             >
               {item.title}

@@ -20,17 +20,17 @@ export default function AuthLink() {
   return (
     <article
       ref={languageRef}
-      className="ml-4 flex items-center gap-3 overflow-hidden font-raleway text-sm font-semibold text-white"
+      className="ml-4 flex items-center gap-4 font-raleway text-sm font-semibold text-white lg:gap-3"
     >
       <Link
         href={NavPaths.LOGIN}
-        className="lg relative text-nowrap underline-offset-4 transition-all duration-200 hover:underline"
+        className="relative text-nowrap text-xs underline-offset-4 transition-all duration-200 hover:underline md:text-sm xl:text-base"
       >
         {t("login")}
       </Link>
       <Link
         href={NavPaths.REGISTER}
-        className="text-nowrap underline-offset-4 transition-all duration-200 hover:underline"
+        className="text-nowrap text-xs underline-offset-4 transition-all duration-200 hover:underline md:text-sm xl:text-base"
       >
         {t("register")}
       </Link>

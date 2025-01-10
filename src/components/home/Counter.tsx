@@ -49,9 +49,9 @@ export default function Counter() {
       {timeItems.map((item, index) => (
         <div key={index} className="counter-item text-center">
           <div className="relative text-[38px] font-bold sm:text-6xl">
-            {item.value}
+            <span className="text-logoGold">{item.value}</span>
             {index + 1 !== timeItems.length && (
-              <span className="absolute -right-4 top-[40%] -translate-y-1/2 font-bold text-black/50 sm:-right-6">
+              <span className="text-logoGold/100 absolute -right-4 top-[40%] -translate-y-1/2 font-bold sm:-right-6">
                 :
               </span>
             )}

@@ -19,9 +19,10 @@
     "register": "Kayıt Ol"
   },
   "Home": {
-    "mobilContactTitle": "Cryptoland Gerçek Dünyaya Yeni Girdi",
-    "mobilContactDescription": "Okuyucunun dikkatinin dağılacağı uzun süredir bilinen bir gerçektir. düzenine bakıldığında bir sayfanın okunabilir içeriği.",
-    "about": "Hakkında",
+    "mobilContactTitle": "C1Coin",
+    "mobilContactSubtitle": "Kripto Paralara Giriş Yapmanın En İyi Yolu",
+    "mobilContactDescription": "Bu heyecan verici alana adım atmak isteyen birçok kişi, karmaşık terimler ve teknik detaylar karşısında geri adım atmaktadır. bu sorunu çözmek ve kripto para dünyasını herkes için erişilebilir kılmak amacıyla kurulmuştur.",
+    "about": "Hakkımızda",
     "contact": "İletişim",
     "card": {
       "clockStopped": "Saat durdu!",
@@ -126,18 +127,36 @@
   },
   "About": {
     "pageTitle": "Hakkımızda",
-    "title": "ICO Crypto Nedir?",
-    "subtitle": "ICO Crypto, yeni hisse senedi blockchain'i için veri sağlayan bir gelecek fonlama platformudur.",
-    "description": "Lorem Ipsum pasajlarının birçok farklı versiyonu mevcuttur, ancak çoğu bir şekilde değişikliğe uğramış, mizah eklenmiş ya da rastgele kelimelerle değiştirilmiştir ve bu da inandırıcı görünmemektedir. Eğer bir Lorem Ipsum pasajı kullanacaksanız, hiçbir şeyin eksik olmadığından emin olmalısınız.",
+    "title": "C1 COIN Nedir?",
+    "subtitle": "C1 COIN, kripto para dünyasını herkes için erişilebilir kılmak amacıyla kurulmuştur.",
+    "description": "Kripto paralar, son yıllarda finansal dünyada çığır açan ve küresel ekonomiyi değiştirme potansiyeline sahip yenilikçi bir varlık sınıfıdır. Ancak, bu heyecan verici alana adım atmak isteyen birçok kişi, karmaşık terimler ve teknik detaylar karşısında geri adım atmaktadır. C1 COIN, bu sorunu çözmek ve kripto para dünyasını herkes için erişilebilir kılmak amacıyla kurulmuştur.",
     "buyTokens": "TOKEN AL",
     "watchVideo": {
       "title": "Video izle",
       "subtitle": "bitcoin hakkında"
     },
-    "runAnywhere": {
-      "title": "ICO'NUZU HER YERDEN YÖNETİN",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quasi ipsum animi optio accusamus repudiandae beatae voluptatibus sed, magni labore."
+    "whyc1Coin": {
+      "title": "Neden C1 COIN?",
+      "content": {
+        "comprehensiveCoverage": {
+          "title": "Kapsamlı Kapsama Alanı",
+          "description": "Haberler, teknik analizler, fiyat ve hacim güncellemeleri, röportajlar ve daha fazlası dahil olmak üzere kripto para dünyasıyla ilgili her şeyi kapsıyoruz."
+        },
+        "engagingExperience": {
+          "title": "Eğlenceli ve Etkileşimli Deneyim",
+          "description": "Canlı yayınlar, trade yarışmaları ve SMS oylamaları gibi çeşitli eğlenceli ve etkileşimli formatlar aracılığıyla izleyicilerimizi kripto para dünyasına dahil ediyoruz."
+        },
+        "understandability": {
+          "title": "Kolay Anlaşılabilirlik",
+          "description": "Karmaşık teknik terimleri ve jargonu basit bir dile indirgemek suretiyle kripto paraları herkes için erişilebilir hale getiriyoruz."
+        },
+        "reliability": {
+          "title": "Güvenilirlik",
+          "description": "Cine1'in köklü itibarına dayanarak, izleyicilerimize en yüksek standartlarda bilgi ve haber sunma sözü veriyoruz."
+        }
+      }
     },
+    "buyTokens": "TOKEN AL",
     "stats": {
       "revenue": "milyar USD beklenen coin geliri 2020'ye kadar",
       "clients": "milyon potansiyel müşteri dünya çapında",

@@ -14,7 +14,7 @@ export default function VerticalTimelines({
   milestones: MilestoneItem[];
 }) {
   return (
-    <section className="block lg:hidden">
+    <section className="mt-10 block lg:hidden">
       <div className="container mx-auto px-4">
         <VerticalTimeline>
           {milestones.map((milestone, index) => (

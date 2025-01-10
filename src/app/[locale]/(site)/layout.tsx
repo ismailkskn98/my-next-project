@@ -10,7 +10,7 @@ export default function MainLayout({
 }>) {
   return (
     <>
-      <div className="fluid absolute inset-0 -z-20 bg-[#000] bg-cover bg-center bg-no-repeat"></div>
+      <div className="fluid absolute inset-0 -z-20 bg-black bg-cover bg-center bg-no-repeat"></div>
       <Toaster position="top-center" />
       <Particles
         className="fluid absolute inset-0 -z-10"

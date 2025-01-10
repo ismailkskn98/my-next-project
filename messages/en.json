@@ -19,8 +19,9 @@
     "register": "Register"
   },
   "Home": {
-    "mobilContactTitle": "Cryptoland Just Entered the Real World",
-    "mobilContactDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "mobilContactTitle": "C1Coin",
+    "mobilContactSubtitle": "The Best Way to Get Started with Cryptocurrencies",
+    "mobilContactDescription": "Many people who want to step into this exciting field hesitate due to complex terms and technical details. It was established to solve this problem and make the world of cryptocurrencies accessible to everyone.",
     "about": "About",
     "contact": "Contact",
     "card": {
@@ -126,24 +127,42 @@
   },
   "About": {
     "pageTitle": "About",
-    "title": "What is ICO Crypto?",
-    "subtitle": "ICO Crypto is a platform for the future of funding that powers data for the new equity blockchain.",
-    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.",
+    "title": "What is C1 COIN?",
+    "subtitle": "C1 COIN was established with the aim of making the world of cryptocurrencies accessible to everyone.",
+    "description": "Cryptocurrencies are an innovative asset class that has revolutionized the financial world in recent years and has the potential to change the global economy. However, many people who wish to enter this exciting field hesitate due to complex terms and technical details. C1 Coin was founded with the aim of solving this problem and making the world of cryptocurrencies accessible to everyone.",
     "buyTokens": "BUY TOKENS",
     "watchVideo": {
       "title": "Watch video",
       "subtitle": "about bitcoin"
     },
-    "runAnywhere": {
-      "title": "RUN YOUR ICO FROM ANYWHERE",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quasi ipsum animi optio accusamus repudiandae beatae voluptatibus sed, magni labore."
+    "whyc1Coin": {
+      "title": "Why C1 COIN?",
+      "content": {
+        "comprehensiveCoverage": {
+          "title": "Comprehensive Coverage",
+          "description": "We cover everything related to the world of cryptocurrencies, including news, technical analyses, price and volume updates, interviews, and more."
+        },
+        "engagingExperience": {
+          "title": "Fun and Interactive Experience",
+          "description": "Through various fun and interactive formats like live broadcasts, trade competitions, and SMS polls, we involve our audience in the world of cryptocurrencies."
+        },
+        "understandability": {
+          "title": "Easy to Understand",
+          "description": "By simplifying complex technical terms and jargon into simple language, we make cryptocurrencies accessible to everyone."
+        },
+        "reliability": {
+          "title": "Reliability",
+          "description": "Building on Cine1's established reputation, we promise to provide our audience with information and news of the highest standards."
+        }
+      }
     },
     "stats": {
       "revenue": "billion USD as expected revenue coins by 2020",
       "clients": "million potential clients worldwide",
       "noBorders": "no borders for international payments",
       "speed": "times faster transaction speed"
-    }
+    },
+    "buyTokens": "BUY TOKENS"
   },
   "Team": {
     "pageTitle": "Team"

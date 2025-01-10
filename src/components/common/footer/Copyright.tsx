@@ -14,7 +14,7 @@ export default function Copyright() {
         </div>
         <Link
           href={NavPaths.HOME}
-          className="text-white/50 underline decoration-white underline-offset-4 transition-all duration-200 hover:text-white"
+          className="decoration-logoGold text-white/50 underline underline-offset-4 transition-all duration-200 hover:text-white"
         >
           by C1Coin
         </Link>

@@ -49,9 +49,9 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
 
   useGSAP(
     () => {
-      gsap.from(".stats-item", {
+      gsap.from(statsContainerRef.current, {
         opacity: 0,
-        duration: 0.2,
+        duration: 0.3,
         ease: "expoScale(0.5,7,none)",
         stagger: {
           each: 0.2,
@@ -82,7 +82,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         statsData.map((item) => (
           <div
             key={item.id}
-            className="stats-item flex w-full flex-col items-center justify-center gap-2"
+            className="stats-item flex w-full max-w-64 flex-col items-center justify-center gap-2 rounded-xl bg-black/10 px-20 py-14 backdrop-blur"
           >
             <div className="flex items-end">
               <CountUp
@@ -95,7 +95,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
                 {item.unit}
               </span>
             </div>
-            <p className="line-clamp-2 max-w-36 text-wrap text-center text-sm tracking-wide text-white sm:text-base md:max-w-48">
+            <p className="line-clamp-2 max-w-36 text-wrap text-center text-sm tracking-wide text-white/80 sm:text-base md:max-w-48">
               {t(item.translationKey)}
             </p>
           </div>

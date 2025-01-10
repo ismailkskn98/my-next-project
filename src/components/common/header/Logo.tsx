@@ -15,6 +15,7 @@ export default function Logo() {
       duration: 0.5,
     });
   });
+
   return (
     <article className="relative">
       <Link href="/">
@@ -26,7 +27,7 @@ export default function Logo() {
           priority
           src="/images/logo.png"
           alt="c1coin logo"
-          className="relative h-auto shadow-[#EAC04A] drop-shadow-2xl"
+          className="relative h-full max-h-[60px] w-full max-w-[70px] shadow-[#EAC04A] drop-shadow-2xl xl:max-h-[70px] xl:max-w-[80px]"
         />
       </Link>
     </article>

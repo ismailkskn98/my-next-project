@@ -21,7 +21,7 @@ export default function ProgressBar() {
         </span>
       </div>
       <Progress value={progress} className="h-1 sm:h-2" />
-      <div className="flex justify-between text-xs sm:text-sm">
+      <div className="flex justify-between px-1 text-xs sm:text-sm">
         <span>{t("card.targetRaised", { value: "0%" })}</span>
         <span>1+</span>
       </div>

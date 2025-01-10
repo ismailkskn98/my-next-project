@@ -5,11 +5,11 @@ export default function AboutImage() {
   return (
     <article className="flex h-full basis-1/3 items-center justify-center bg-black/50">
       <Image
-        src="/images/570x570.jpg"
+        src="/images/about.png"
         alt="about image"
-        className="h-auto w-auto rounded-lg brightness-75 drop-shadow-2xl"
-        width={500}
-        height={500}
+        className="h-full w-full rounded-lg object-cover object-center brightness-75 drop-shadow-2xl"
+        width={400}
+        height={400}
       />
     </article>
   );

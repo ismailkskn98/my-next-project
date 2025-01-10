@@ -12,6 +12,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        logoGold: {
+          DEFAULT: "#FEC057",
+          100: "#f8d664cc",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -59,6 +63,7 @@ export default {
         footerBg: "url('/images/footer-bg.svg')",
         footerBgDeneme: "url('/images/footer-bg-deneme.svg')",
         homeStatsBg: "url('/images/home-stats-bg.jpg')",
+        aboutBg: "url('/images/about.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",

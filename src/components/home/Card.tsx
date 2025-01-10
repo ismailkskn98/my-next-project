@@ -14,7 +14,7 @@ export default function Card() {
         {t("card.clockStopped")}
       </div>
       <ProgressBar />
-      <CardButton />
+      <CardButton label={t("card.buyTokens")} />
     </article>
   );
 }

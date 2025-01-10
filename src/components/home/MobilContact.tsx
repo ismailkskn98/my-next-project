@@ -2,6 +2,7 @@ import { Link, NavPaths } from "@/i18n/routing";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React, { useRef } from "react";
 
 export default function MobilContact() {
@@ -20,22 +21,39 @@ export default function MobilContact() {
   return (
     <section className="mx-auto flex items-center justify-center bg-transparent px-4 text-center text-white lg:mx-0">
       <div ref={elementRef} className="max-w-3xl space-y-6">
-        <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
-          {t("mobilContactTitle")}
-        </h1>
+        <div className="relative mx-auto flex w-min items-center justify-center gap-4 font-raleway text-6xl font-bold uppercase leading-tight sm:text-7xl">
+          <span>c1</span>
+          <span className="flex items-center justify-center">
+            c
+            <span className="text-logoGold relative">
+              o
+              <Image
+                src={"/images/logo.png"}
+                alt="c1coin logo"
+                width={50}
+                height={50}
+                className="absolute left-1/2 top-1/2 -z-10 max-h-[35px] max-w-[35px] -translate-x-1/2 -translate-y-1/2 object-center drop-shadow-xl"
+              />
+            </span>
+            ın
+          </span>
+        </div>
+        <h2 className="re text-4xl font-medium capitalize">
+          {t("mobilContactSubtitle")}
+        </h2>
         <p className="mx-auto max-w-2xl text-white/80">
           {t("mobilContactDescription")}
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
             href={NavPaths.ABOUT}
-            className="inline-flex h-10 items-center justify-center rounded-md bg-[#F5E36C]/80 px-8 text-sm font-medium capitalize text-[#0f141d] transition-colors hover:bg-[#F5E36C]"
+            className="bg-logoGold hover:bg-logoGold-100 inline-flex h-10 items-center justify-center rounded-md px-8 text-base font-medium capitalize text-white transition-colors"
           >
             {t("about")}
           </Link>
           <Link
             href={NavPaths.CONTACT}
-            className="inline-flex h-10 items-center justify-center rounded-md bg-[#0f141d]/80 px-8 text-sm font-medium capitalize text-white transition-colors hover:bg-[#0f141d]"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-base font-medium capitalize text-black/80 transition-colors hover:bg-white/80"
           >
             {t("contact")}
           </Link>
