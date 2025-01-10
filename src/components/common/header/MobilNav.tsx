@@ -37,12 +37,12 @@ export default function MobilNav() {
     <Sheet>
       <SheetTrigger asChild>
         <span className="flex items-center justify-center border-none bg-transparent outline-none lg:hidden">
-          <HiMenuAlt3 className="min-h-7 min-w-7 text-white" />
+          <HiMenuAlt3 className="min-h-8 min-w-8 text-white" />
         </span>
       </SheetTrigger>
-      <SheetContent className="border-logoGold flex flex-col items-center justify-between space-y-12 bg-transparent text-white backdrop-blur-md">
+      <SheetContent className="border-logoGold grid grid-cols-1 grid-rows-6 place-content-center place-items-center gap-2 bg-transparent pb-5 pt-12 text-white backdrop-blur-md">
         <SheetHeader>
-          <SheetTitle className="flex items-center justify-center gap-4">
+          <SheetTitle className="flex items-center justify-center gap-2">
             <Image
               src={"/images/logo.png"}
               width={60}
@@ -55,8 +55,8 @@ export default function MobilNav() {
             </span>
           </SheetTitle>
         </SheetHeader>
-        <main className="w-full basis-3/4">
-          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-6 text-xl">
+        <main className="row-span-4">
+          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-4 text-lg">
             {navItems.map((item, index) => {
               return (
                 <SheetTrigger key={index} asChild>
@@ -77,7 +77,7 @@ export default function MobilNav() {
         </main>
         <SheetFooter>
           <SheetClose>
-            <div className="text-grey-60 flex items-center gap-2 md:gap-[10px] 2xl:gap-[14px]">
+            <div className="text-grey-60 flex items-center justify-center gap-2 md:gap-[10px] 2xl:gap-[14px]">
               <Language />
             </div>
           </SheetClose>
