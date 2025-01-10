@@ -4,7 +4,6 @@ import React from "react";
 import { Formik, Form } from "formik";
 import registerSchema from "./registerSchema";
 import CustomInput from "./components/CustomInput";
-import axios from "axios";
 
 interface RegisterFormValues {
   firstName: string;
@@ -27,7 +26,7 @@ const Register: React.FC = () => {
 
   const handleSubmit = (values: RegisterFormValues) => {
     console.log(values);
-    // Burada kayıt işlemlerini gerçekleştirebilirsiniz
+    // kayıt işlemlerini
   };
 
   return (
