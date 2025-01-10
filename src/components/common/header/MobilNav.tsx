@@ -1,7 +1,6 @@
 "use client";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -40,7 +39,7 @@ export default function MobilNav() {
           <HiMenuAlt3 className="min-h-8 min-w-8 text-white" />
         </span>
       </SheetTrigger>
-      <SheetContent className="border-logoGold grid grid-cols-1 grid-rows-6 place-content-center place-items-center gap-2 bg-transparent pb-5 pt-12 text-white backdrop-blur-md">
+      <SheetContent className="grid grid-cols-1 grid-rows-6 place-content-center place-items-center gap-2 border-logoGold bg-transparent pb-5 pt-12 text-white backdrop-blur-md">
         <SheetHeader>
           <SheetTitle className="flex items-center justify-center gap-2">
             <Image
@@ -50,7 +49,7 @@ export default function MobilNav() {
               alt="c1coin logo"
               className="h-full max-h-[41] w-full max-w-[51px]"
             />
-            <span className="text-logoGold text-nowrap font-raleway text-[28px]">
+            <span className="text-nowrap font-raleway text-[28px] text-logoGold">
               C1 COIN
             </span>
           </SheetTitle>
@@ -63,9 +62,9 @@ export default function MobilNav() {
                   <Link
                     href={item.path}
                     className={classNames("", {
-                      "bg-logoGold rounded-sm px-3 py-1 text-black backdrop-blur-sm hover:text-black":
+                      "rounded-sm bg-logoGold px-3 py-1 text-black backdrop-blur-sm hover:text-black":
                         pathname === item.path,
-                      "hover:text-logoGold text-white": pathname !== item.path,
+                      "text-white hover:text-logoGold": pathname !== item.path,
                     })}
                   >
                     {item.title}
@@ -76,11 +75,9 @@ export default function MobilNav() {
           </SheetDescription>
         </main>
         <SheetFooter>
-          <SheetClose>
-            <div className="text-grey-60 flex items-center justify-center gap-2 md:gap-[10px] 2xl:gap-[14px]">
-              <Language />
-            </div>
-          </SheetClose>
+          <div className="text-grey-60 flex items-center justify-center gap-2 md:gap-[10px] 2xl:gap-[14px]">
+            <Language />
+          </div>
         </SheetFooter>
       </SheetContent>
     </Sheet>
