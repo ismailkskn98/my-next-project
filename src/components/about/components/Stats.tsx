@@ -77,7 +77,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         statsData.map((item) => (
           <div
             key={item.id}
-            className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-white/30 py-14 backdrop-blur"
+            className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur"
           >
             <div className="flex items-end">
               <CountUp
