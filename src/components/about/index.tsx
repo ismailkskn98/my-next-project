@@ -6,6 +6,7 @@ import Stats from "./components/Stats";
 
 export default function About() {
   const t = useTranslations("About");
+
   return (
     <main className="relative z-10 mb-4 mt-2 flex w-full flex-col gap-8 pb-12 pt-16 md:mb-14 md:mt-16 md:gap-20">
       <PageTitle title={t("pageTitle")} />

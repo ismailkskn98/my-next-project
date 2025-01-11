@@ -19,8 +19,6 @@ import Image from "next/image";
 export default function MobilNav() {
   const t = useTranslations("Header");
   const pathname = usePathname();
-  console.log(pathname);
-
   const navItems: NavItemType[] = [
     { path: NavPaths.HOME, title: t("nav.home") },
     { path: NavPaths.ABOUT, title: t("nav.about") },
@@ -28,7 +26,6 @@ export default function MobilNav() {
     { path: NavPaths.TOKEN, title: t("nav.token") },
     { path: NavPaths.TEAM, title: t("nav.team") },
     { path: NavPaths.FAQ, title: t("nav.faq") },
-    { path: NavPaths.BLOG, title: t("nav.blog") },
     { path: NavPaths.CONTACT, title: t("nav.contact") },
   ];
 
@@ -39,7 +36,7 @@ export default function MobilNav() {
           <HiMenuAlt3 className="min-h-8 min-w-8 text-white" />
         </span>
       </SheetTrigger>
-      <SheetContent className="grid grid-cols-1 grid-rows-6 place-content-center place-items-center gap-2 border-logoGold bg-transparent pb-5 pt-12 text-white backdrop-blur-md">
+      <SheetContent className="grid grid-cols-1 grid-rows-6 place-content-center place-items-center gap-0 border-logoGold bg-black/60 pb-5 pt-12 text-white backdrop-blur-sm">
         <SheetHeader>
           <SheetTitle className="flex items-center justify-center gap-2">
             <Image

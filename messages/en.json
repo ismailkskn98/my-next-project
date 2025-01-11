@@ -25,7 +25,7 @@
     "about": "About",
     "contact": "Contact",
     "faq": "Frequently Asked Questions",
-    "stats": "Statistics",
+    "stats": "Use of Funds",
     "card": {
       "clockStopped": "The clock has stopped!",
       "preSaleLive": "ICO pre-sale is live",
@@ -159,12 +159,10 @@
       }
     },
     "stats": {
-      "revenue": "billion USD as expected revenue coins by 2020",
-      "clients": "million potential clients worldwide",
-      "noBorders": "no borders for international payments",
-      "speed": "times faster transaction speed"
-    },
-    "buyTokens": "BUY TOKENS"
+      "marketing": "The {rate} of the raised funds will be used to finance the marketing and promotional activities of C1 COIN.",
+      "investor": "The {rate} of the raised funds will be distributed to active investors participating in the presale.",
+      "exchange": "The {rate} of the raised funds will be used to provide liquidity for the entry of C1 COIN tokens into the exchange."
+    }
   },
   "Team": {
     "pageTitle": "Team"
@@ -173,7 +171,43 @@
     "pageTitle": "Blog"
   },
   "Contact": {
-    "pageTitle": "Contact"
+    "pageTitle": "Contact",
+    "pageSubtitle": "Thank you for reaching out to us. We are always here for your questions or feedback. We will get back to you as soon as possible.",
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessage": "An error occurred. Please try again.",
+    "validation": {
+      "name": {
+        "minLength": "Name must be at least 3 characters long",
+        "required": "Name is required"
+      },
+      "email": {
+        "invalid": "Please enter a valid email address",
+        "required": "Email is required"
+      },
+      "message": {
+        "required": "Message is required",
+        "minLength": "Message must be at least 10 characters long"
+      }
+    },
+    "form": {
+      "title": "Contact Us",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "message": {
+        "label": "Your message",
+        "placeholder": "Your message"
+      },
+      "contactButton": {
+        "submit": "Submit",
+        "submitting": "Submitting..."
+      }
+    }
   },
   "FAQ": {
     "pageTitle": "Frequently Asked Questions"

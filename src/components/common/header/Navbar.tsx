@@ -24,7 +24,6 @@ export default function Navbar() {
     { path: NavPaths.TOKEN, title: t("nav.token") },
     { path: NavPaths.TEAM, title: t("nav.team") },
     { path: NavPaths.FAQ, title: t("nav.faq") },
-    { path: NavPaths.BLOG, title: t("nav.blog") },
     { path: NavPaths.CONTACT, title: t("nav.contact") },
   ];
 
@@ -53,7 +52,7 @@ export default function Navbar() {
             <Link
               href={item.path}
               className={classNames("", {
-                "bg-logoGold rounded-sm px-3 py-2 text-sm font-medium text-black backdrop-blur-sm hover:text-black xl:text-base":
+                "rounded-sm bg-logoGold px-3 py-2 text-sm font-medium text-black backdrop-blur-sm hover:text-black xl:text-base":
                   pathname === item.path,
                 "navbar-item": pathname !== item.path,
               })}

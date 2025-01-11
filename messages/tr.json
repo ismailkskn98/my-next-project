@@ -2,7 +2,7 @@
   "Header": {
     "nav": {
       "home": "Anasayfa",
-      "about": "Hakkında",
+      "about": "Hakkımızda",
       "roadmap": "Yol Haritası",
       "token": "Token",
       "team": "Ekip",
@@ -25,7 +25,7 @@
     "about": "Hakkımızda",
     "contact": "İletişim",
     "faq": "Sıkça Sorulan Sorular",
-    "stats": "İstatistikler",
+    "stats": "Fon Kullanımı",
     "card": {
       "clockStopped": "Saat durdu!",
       "preSaleLive": "ICO ön satışı başladı",
@@ -158,12 +158,10 @@
         }
       }
     },
-    "buyTokens": "TOKEN AL",
     "stats": {
-      "revenue": "milyar USD beklenen coin geliri 2020'ye kadar",
-      "clients": "milyon potansiyel müşteri dünya çapında",
-      "noBorders": "uluslararası ödemeler için sınır yok",
-      "speed": "kat daha hızlı işlem hızı"
+      "marketing": "Toplanan fonların {rate}, C1 COIN'nin pazarlama ve tanıtım faaliyetlerini finanse etmek için kullanılacaktır.",
+      "investor": "Toplanan fonların {rate}, ön satışa katılan aktif yatırımcılara dağıtılacaktır.",
+      "exchange": "Toplanan fonların {rate}, C1 COIN token'larının borsaya girişinde likidite sağlamak için kullanılacaktır."
     }
   },
   "Team": {
@@ -173,7 +171,43 @@
     "pageTitle": "Blog"
   },
   "Contact": {
-    "pageTitle": "Iletisim"
+    "pageTitle": "İletişim",
+    "pageSubtitle": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Sorularınız veya geri bildirimleriniz için her zaman buradayız. En kısa sürede size dönüş yapacağız.",
+    "successMessage": "Mesajınız başarıyla gönderildi!",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "validation": {
+      "name": {
+        "minLength": "İsim en az 3 karakter olmalı",
+        "required": "İsim gerekli"
+      },
+      "email": {
+        "invalid": "Geçerli bir e-posta adresi girin",
+        "required": "E-posta gerekli"
+      },
+      "message": {
+        "required": "Mesaj gerekli",
+        "minLength": "Mesaj en az 10 karakter olmalı"
+      }
+    },
+    "form": {
+      "title": "Bize ulaşın",
+      "name": {
+        "label": "İsim",
+        "placeholder": "Adınız"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@email.com"
+      },
+      "message": {
+        "label": "Mesajınız",
+        "placeholder": "Mesajınız"
+      },
+      "contactButton": {
+        "submit": "Gönder",
+        "submitting": "Gönderiliyor..."
+      }
+    }
   },
   "FAQ": {
     "pageTitle": "Sıkça Sorulan Sorular"

@@ -10,7 +10,7 @@ import classNames from "classnames";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type StatsItem = {
+export type StatsItem = {
   id: number;
   value: number;
   unit?: string;
@@ -24,26 +24,21 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
   const statsData: StatsItem[] = [
     {
       id: 1,
-      value: 50,
-      unit: "$",
-      translationKey: "stats.revenue",
+      value: 25,
+      unit: "%",
+      translationKey: t("stats.marketing", { rate: "25%" }),
     },
     {
       id: 2,
-      value: 150,
-      translationKey: "stats.clients",
+      value: 20,
+      unit: "%",
+      translationKey: t("stats.investor", { rate: "20%" }),
     },
     {
       id: 3,
-      value: 20,
+      value: 55,
       unit: "%",
-      translationKey: "stats.noBorders",
-    },
-    {
-      id: 4,
-      value: 10,
-      unit: "x",
-      translationKey: "stats.speed",
+      translationKey: t("stats.exchange", { rate: "55%" }),
     },
   ];
 
@@ -51,15 +46,15 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
     () => {
       gsap.from(statsContainerRef.current, {
         opacity: 0,
-        duration: 0.3,
-        ease: "expoScale(0.5,7,none)",
+        duration: 0.1,
+        ease: "power1.out",
         stagger: {
-          each: 0.2,
+          each: 0.0,
         },
         scrollTrigger: {
           trigger: statsContainerRef.current,
-          start: "top 80%",
-          end: "bottom 70%",
+          start: "top 99%",
+          end: "top 80%",
           onEnter: () => setStateVisible(true),
         },
       });
@@ -71,7 +66,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
     <div
       ref={statsContainerRef}
       className={classNames(
-        "mx-auto grid min-h-[108px] w-full grid-cols-2 place-items-center gap-x-5 gap-y-7 text-white sm:gap-x-7 sm:gap-y-12 md:grid-cols-4 md:gap-y-7",
+        "mx-auto grid h-full min-h-[448px] w-full grid-cols-1 place-items-center gap-x-5 gap-y-7 text-white sm:min-h-[528px] sm:gap-x-7 sm:gap-y-12 md:min-h-[228px] md:grid-cols-3 md:gap-y-7 lg:max-h-[414px]",
         {
           "w-10/12": !isHome,
           "w-full": isHome,
@@ -82,21 +77,21 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         statsData.map((item) => (
           <div
             key={item.id}
-            className="stats-item flex w-full max-w-64 flex-col items-center justify-center gap-2 rounded-xl bg-black/10 py-14 backdrop-blur"
+            className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-white/30 py-14 backdrop-blur"
           >
             <div className="flex items-end">
               <CountUp
                 start={0}
                 end={item.value}
                 duration={2.5}
-                className="text-4xl font-extrabold sm:text-5xl md:text-6xl"
+                className="text-4xl font-extrabold sm:text-5xl lg:text-6xl"
               />
-              <span className="text-4xl font-extrabold sm:text-5xl md:text-6xl">
+              <span className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
                 {item.unit}
               </span>
             </div>
-            <p className="max-w-36 text-wrap text-center text-sm tracking-wide text-white/80 sm:text-base md:max-w-48">
-              {t(item.translationKey)}
+            <p className="text-wrap text-center text-sm leading-10 tracking-wide text-white/80 sm:text-base">
+              {item.translationKey}
             </p>
           </div>
         ))}

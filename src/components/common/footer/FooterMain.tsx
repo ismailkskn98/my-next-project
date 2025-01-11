@@ -11,7 +11,6 @@ export default function FooterMain() {
     { href: NavPaths.ABOUT, label: t("company.about") },
     { href: NavPaths.TOKEN, label: t("company.token") },
     { href: NavPaths.TEAM, label: t("company.team") },
-    { href: NavPaths.BLOG, label: t("company.blog") },
   ];
 
   const servicesLinks = [
@@ -21,7 +20,7 @@ export default function FooterMain() {
   ];
 
   return (
-    <section className="mx-auto flex w-full flex-col items-center justify-around gap-10 sm:w-10/12 sm:px-4 sm:py-12 md:w-9/12 lg:w-full lg:flex-row lg:items-start lg:justify-between lg:gap-5">
+    <section className="mx-auto mb-5 flex w-full flex-col items-center justify-around gap-10 sm:w-10/12 sm:px-4 sm:py-12 md:w-9/12 lg:w-full lg:flex-row lg:items-start lg:justify-between lg:gap-5">
       <article className="flex flex-col items-center justify-center gap-8 sm:flex-row lg:flex-col lg:items-start">
         <div className="flex flex-col items-center gap-2 sm:items-start">
           <div className="flex items-center gap-1">

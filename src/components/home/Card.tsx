@@ -10,7 +10,7 @@ export default function Card() {
     <article className="flex w-full flex-col items-center gap-6 overflow-hidden rounded-md px-4 py-6 text-white sm:gap-10 sm:px-8 sm:py-10">
       <Header />
       <Counter />
-      <div className="text-center text-xs text-white/80 sm:text-sm">
+      <div className="text-center text-xs font-semibold text-white/80 sm:text-sm">
         {t("card.clockStopped")}
       </div>
       <ProgressBar />

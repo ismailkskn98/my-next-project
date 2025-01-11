@@ -10,8 +10,8 @@ export default function MainLayout({
 }>) {
   return (
     <>
-      <div className="fluid absolute inset-0 -z-20 bg-black bg-cover bg-center bg-no-repeat"></div>
-      <Toaster position="top-center" />
+      <div className="fluid absolute inset-0 -z-20 bg-[#111] bg-cover bg-center bg-no-repeat"></div>
+      <Toaster position="top-center" closeButton richColors theme="dark" />
       <Particles
         className="fluid absolute inset-0 -z-10"
         quantity={200}

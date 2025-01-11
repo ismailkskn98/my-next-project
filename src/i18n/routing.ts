@@ -8,7 +8,6 @@ export enum NavPaths {
   TOKEN = "/token",
   TEAM = "/team",
   FAQ = "/faq",
-  BLOG = "/blog",
   CONTACT = "/contact",
   LOGIN = "/auth/login",
   REGISTER = "/auth/register",
@@ -30,10 +29,6 @@ export const routing = defineRouting({
     [NavPaths.ABOUT]: {
       en: "/about", // İngilizce için
       tr: "/about", // Türkçe için
-    },
-    [NavPaths.BLOG]: {
-      en: "/blog",
-      tr: "/blog", // Eğer Türkçede de aynı yol kullanılacaksa
     },
     [NavPaths.CONTACT]: {
       en: "/contact",

@@ -3,18 +3,21 @@
 import Chart from "react-apexcharts";
 
 export default function PieChart() {
+  const customColors = ["#F5E6CA", "#1E293B", "#4A90E2", "#FF6F00", "#FEC057"];
+
   const options: ApexCharts.ApexOptions = {
     chart: {
       width: 380,
       type: "polarArea",
     },
+    colors: customColors,
     labels: ["Rose A", "Rose B", "Rose C", "Rose D", "Rose E"],
     fill: {
       opacity: 1,
     },
     stroke: {
       width: 1,
-      colors: undefined,
+      colors: ["#1a1a1a"],
     },
     yaxis: {
       show: false,
@@ -38,7 +41,7 @@ export default function PieChart() {
     },
     theme: {
       monochrome: {
-        enabled: false, // Monokrom tema devre dışı bırakıldı
+        enabled: false,
       },
     },
   };

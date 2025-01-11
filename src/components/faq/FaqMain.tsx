@@ -76,7 +76,7 @@ export default function FaqMain({ isHome = false }: { isHome: boolean }) {
               <TabsTrigger
                 key={tab.category}
                 value={tab.category}
-                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-xs font-medium text-white/90 sm:px-3 sm:text-sm"
+                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-sm font-medium text-white/90 sm:px-3 md:text-base"
               >
                 {tab.title}
               </TabsTrigger>

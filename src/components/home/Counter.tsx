@@ -2,21 +2,56 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface timeItems {
   title: string;
-  value: string;
+  value: number;
 }
 
 export default function Counter() {
   const t = useTranslations("Home");
-  const [timeLeft] = useState({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
+  const timerDay = 3;
+  const [timeLeft, setTimeLeft] = useState({
+    days: timerDay,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
+
+  useEffect(() => {
+    const targetDate = new Date(); // şuanki tarihi ve saati temsil ediyor
+    // targetDate.getDate() // bugünü veriyor sayı olarak (11)
+    targetDate.setDate(targetDate.getDate() + timerDay); // şuanki güne 2 gün ekliyor (13)
+
+    const timer = setInterval(() => {
+      // her 1 saniye de bir burası çalışacak
+      const now = new Date().getTime(); // Şu anki zaman milisaniye cinsinden alınıyor.
+      const distance = targetDate.getTime() - now; // Hedef tarih ile şu anki zaman arasındaki fark. Bu farkı milisaniye cinsinden alıyoruz.
+
+      if (distance < 0) {
+        clearInterval(timer);
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        ),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000),
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   const timeItems: timeItems[] = [
     { title: t("card.days"), value: timeLeft.days },
@@ -44,17 +79,17 @@ export default function Counter() {
   return (
     <div
       ref={counterItemContainer}
-      className="flex items-center justify-center gap-4 sm:gap-7"
+      className="flex w-full items-center justify-center gap-4 rounded-lg bg-white/5 px-3 py-3 sm:gap-7 md:px-10"
     >
       {timeItems.map((item, index) => (
-        <div key={index} className="counter-item text-center">
+        <div
+          key={index}
+          className="counter-item -space-y-1 text-center sm:space-y-2"
+        >
           <div className="relative text-[38px] font-bold sm:text-6xl">
-            <span className="text-logoGold">{item.value}</span>
-            {index + 1 !== timeItems.length && (
-              <span className="text-logoGold/100 absolute -right-4 top-[40%] -translate-y-1/2 font-bold sm:-right-6">
-                :
-              </span>
-            )}
+            <div className="text-logoGold">
+              {item.value.toString().padStart(2, "0")}
+            </div>
           </div>
           <div className="mt-2 text-xs uppercase sm:text-sm">{item.title}</div>
         </div>

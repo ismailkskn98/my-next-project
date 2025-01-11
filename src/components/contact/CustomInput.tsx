@@ -22,10 +22,10 @@ export function CustomInput({ label, ...props }: CustomInputProps) {
       <Input
         {...field}
         {...props}
-        className="h-min max-h-14 w-full flex-1 border-black/70 bg-white/10 px-3 py-4 text-white"
+        className="h-min max-h-14 w-full flex-1 border-black/70 bg-white/20 px-3 py-4 text-white placeholder:text-white/60"
       />
       {meta.touched && meta.error ? (
-        <div className="mt-1 text-sm text-red-500">{meta.error}</div>
+        <div className="mt-1 text-sm text-red-500">*{meta.error}</div>
       ) : null}
     </div>
   );

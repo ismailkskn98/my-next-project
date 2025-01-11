@@ -31,7 +31,9 @@ export default function Header() {
       >
         <p className="header-item">{t("card.preSaleLive")}</p>
       </div>
-      <p className="header-item text-xs sm:text-sm">{t("card.endsIn")}</p>
+      <p className="header-item text-xs font-semibold sm:text-sm">
+        {t("card.endsIn")}
+      </p>
     </header>
   );
 }

@@ -40,26 +40,31 @@ const ralewayFont = localFont({
   variable: "--raleway-font",
 });
 
-const tajawalFont = localFont({
+const geistFont = localFont({
   src: [
     {
-      path: "../fonts/Tajawal-Light.ttf",
+      path: "../fonts/Geist-Light.ttf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../fonts/Tajawal-Regular.ttf",
+      path: "../fonts/Geist-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/Tajawal-Medium.ttf",
+      path: "../fonts/Geist-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../fonts/Tajawal-Bold.ttf",
-      weight: "800",
+      path: "../fonts/Geist-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Geist-Bold.ttf",
+      weight: "700",
       style: "normal",
     },
   ],
@@ -85,7 +90,7 @@ export default async function RootLayout(props: {
   return (
     <html lang={locale} className="h-full w-full">
       <body
-        className={`h-full w-full bg-black ${ralewayFont.variable} ${tajawalFont.variable}`}
+        className={`h-full w-full bg-black ${ralewayFont.variable} ${geistFont.variable}`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
