@@ -79,7 +79,7 @@ export default function Counter() {
   return (
     <div
       ref={counterItemContainer}
-      className="mobileL:gap-4 flex w-full items-center justify-evenly gap-2 rounded-lg bg-white/5 px-3 py-3 sm:gap-7 lg:px-10"
+      className="mobileL:gap-4 flex w-full items-center justify-around gap-2 rounded-lg bg-white/5 px-3 py-3 sm:gap-5 xl:gap-7"
     >
       {timeItems.map((item, index) => (
         <div key={index} className="counter-item flex flex-col items-center">

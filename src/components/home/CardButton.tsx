@@ -20,9 +20,9 @@ export default function CardButton({ label }: { label: string }) {
     <article ref={elementRef} className="h-min w-min">
       <Link
         href={NavPaths.LOGIN}
-        className="group flex w-full items-center justify-center gap-5 text-nowrap border-none bg-transparent font-raleway text-3xl font-bold tracking-wider shadow-none outline-none hover:bg-transparent sm:gap-10 sm:text-4xl"
+        className="mobileL:text-3xl group flex w-full items-center justify-center gap-5 text-nowrap border-none bg-transparent font-raleway text-2xl font-bold tracking-wider shadow-none outline-none hover:bg-transparent sm:gap-10 sm:text-4xl"
       >
-        <span className="from-logoGold to-logoGold-100 relative z-10 overflow-hidden bg-gradient-to-r bg-clip-text text-transparent drop-shadow-lg transition-all duration-300 after:absolute after:inset-y-0 after:left-0 after:-z-20 after:w-full after:-translate-x-32 after:translate-y-0 after:skew-x-6 after:skew-y-[19deg] after:bg-white/30 after:transition-transform after:duration-300 after:group-hover:translate-x-28">
+        <span className="relative z-10 overflow-hidden bg-gradient-to-r from-logoGold to-logoGold-100 bg-clip-text text-transparent drop-shadow-lg transition-all duration-300 after:absolute after:inset-y-0 after:left-0 after:-z-20 after:w-full after:-translate-x-32 after:translate-y-0 after:skew-x-6 after:skew-y-[19deg] after:bg-white/30 after:transition-transform after:duration-300 after:group-hover:translate-x-28">
           {label}
         </span>
       </Link>

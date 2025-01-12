@@ -23,17 +23,14 @@ export default function PageTitle({ title, isFaq, isHome }: PageTitleProps) {
     <article className="flex w-full items-center justify-center">
       <div className="relative flex w-full items-center justify-center">
         <h2
-          className={classNames(
-            "relative z-10 text-nowrap font-raleway font-extrabold text-white before:absolute before:left-1/2 before:top-1/4 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:font-raleway before:font-extrabold before:text-logoGold/10 before:content-[var(--title)] after:absolute after:-bottom-3 after:left-1/2 after:h-[2px] after:w-20 after:-translate-x-1/2 after:bg-logoGold after:content-['']",
-            {
-              "mobileL:text-4xl mobileL:before:text-6xl mobileS:text-3xl mobileS:before:text-5xl text-3xl before:text-4xl sm:before:text-7xl md:text-4xl md:before:text-8xl lg:text-5xl lg:before:text-9xl xl:text-6xl":
-                !isFaq,
-              "mobileL:before:text-3xl mobilM:before:text-[27px] mobilM:text-2xl mobileS:text-xl mobileS:before:text-[22px] text-base before:text-lg sm:before:text-[46px] md:before:text-[55px] xl:before:text-7xl 2xl:before:text-8xl":
-                isFaq,
-              "page-title": !isHome,
-              "text-white": isHome,
-            },
-          )}
+          className={classNames("pageTitleH2", {
+            "mobileL:text-4xl mobileL:before:text-6xl mobileS:text-3xl mobileS:before:text-5xl text-3xl before:text-4xl sm:before:text-7xl md:text-4xl md:before:text-8xl lg:text-5xl lg:before:text-9xl xl:text-6xl":
+              !isFaq,
+            "mobileL:before:text-3xl mobilM:before:text-[27px] mobilM:text-2xl mobileS:text-xl mobileS:before:text-[22px] mobileL:text-[25px] text-base before:text-lg sm:text-4xl sm:before:text-[46px] md:before:text-[55px] lg:text-6xl lg:before:text-7xl 2xl:before:text-8xl":
+              isFaq,
+            "page-title": !isHome,
+            "text-white": isHome,
+          })}
           style={{ "--title": `"${title}"` } as React.CSSProperties}
         >
           {title}

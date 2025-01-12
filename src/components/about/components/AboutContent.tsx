@@ -26,27 +26,33 @@ export default function AboutContent() {
 
   return (
     <article className="flex w-full flex-col items-center gap-10 lg:items-start">
-      <div className="flex w-10/12 flex-col items-start gap-2">
+      <div className="flex w-full flex-col items-start gap-2 lg:w-10/12">
         <h1
-          className={`relative text-3xl font-semibold after:absolute after:-right-5 after:top-0 after:rotate-12 after:font-raleway after:font-extrabold after:text-logoGold after:content-['?'] md:text-4xl`}
+          className={`relative text-2xl font-semibold after:absolute after:-right-5 after:top-0 after:rotate-12 after:font-raleway after:font-extrabold after:text-logoGold after:content-['?'] sm:text-3xl md:text-4xl`}
         >
           {t("title")}
         </h1>
-        <p className="font-semibold text-logoGold">{t("subtitle")}</p>
+        <p className="mobileL:text-sm text-xs font-semibold text-logoGold lg:text-base">
+          {t("subtitle")}
+        </p>
       </div>
-      <div className="flex w-10/12 flex-col items-start gap-10">
-        <p className="font-medium leading-7">{t("description")}</p>
-        <div className="flex w-10/12 flex-col items-start gap-8">
-          <h2 className="relative text-4xl font-medium uppercase after:absolute after:-right-5 after:top-0 after:rotate-12 after:font-raleway after:font-extrabold after:text-logoGold after:content-['?']">
+      <div className="flex w-full flex-col items-start gap-10 lg:w-10/12">
+        <p className="mobileM:text-sm text-xs font-medium leading-6 lg:text-base">
+          {t("description")}
+        </p>
+        <div className="flex w-full flex-col items-start gap-8 lg:w-10/12">
+          <h2 className="relative text-2xl font-medium uppercase after:absolute after:-right-5 after:top-0 after:rotate-12 after:font-raleway after:font-extrabold after:text-logoGold after:content-['?'] sm:text-3xl md:text-4xl">
             {t("whyc1Coin.title")}
           </h2>
           <div className="flex flex-col items-start gap-3">
             {whyc1CoinItems.map((item, index) => (
               <div key={index} className="flex flex-col items-start gap-2">
-                <h4 className="relative text-lg font-semibold after:absolute after:-right-2 after:-top-[3px] after:font-raleway after:text-2xl after:font-extrabold after:text-logoGold after:content-[':']">
+                <h4 className="mobileS:text-lg mobileS:after:-top-[3px] relative text-nowrap text-base font-semibold after:absolute after:-right-2 after:-top-[5px] after:font-raleway after:text-2xl after:font-extrabold after:text-logoGold after:content-[':']">
                   {item.title}
                 </h4>
-                <p className="text-lg">{item.description}</p>
+                <p className="mobileM:text-sm text-xs leading-6 lg:text-base">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

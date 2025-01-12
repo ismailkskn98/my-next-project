@@ -56,7 +56,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         <div
           ref={ref}
           key={item.id}
-          className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur"
+          className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur-sm"
         >
           <h5 className="px-4 text-center text-3xl font-semibold capitalize text-white sm:text-3xl">
             {item.title}
@@ -77,7 +77,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
               {item.unit}
             </span>
           </div>
-          <p className="text-wrap px-4 text-center text-sm leading-10 tracking-wide text-white/80 sm:text-base">
+          <p className="text-wrap px-4 text-center text-sm tracking-wide text-white/85 sm:text-base">
             {item.description}
           </p>
         </div>

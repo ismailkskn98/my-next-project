@@ -5,7 +5,7 @@ import Advisors from "./Advisors";
 export default function TeamMain() {
   return (
     <section className="mx-auto mb-10 flex w-full flex-col items-start justify-center gap-16 py-14 text-white lg:flex-row lg:justify-between lg:gap-9">
-      <article className="flex h-full flex-col items-start justify-center gap-5 xl:justify-between">
+      <article className="flex h-full flex-col items-start justify-start gap-16">
         <div className="flex flex-col items-center gap-3 lg:items-start">
           <div className="flex flex-col items-center gap-2 lg:items-start">
             <h3 className="font-raleway text-3xl font-extrabold uppercase">

@@ -37,15 +37,13 @@ export default function PersonalImages() {
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
       </article>
-      <article className="grid w-full grid-cols-1 gap-y-5 sm:hidden">
+      <article className="mobileM:grid-cols-2 grid w-full grid-cols-1 gap-5 sm:hidden lg:gap-y-5">
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
-
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
-
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />
         <PersonalImage src="/images/dummy-200x200.png" name="Kişi ismi" />

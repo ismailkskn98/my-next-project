@@ -62,7 +62,7 @@ const faqData = [
 
 export default function FaqMain({ isHome = false }: { isHome: boolean }) {
   return (
-    <div className="w-full p-4 text-white md:p-8">
+    <div className="mobileL:p-4 mobileM:px-2 w-full px-1 text-white md:p-8">
       <div className="mx-auto space-y-12">
         <Tabs defaultValue="regular" className="w-full space-y-8">
           <TabsList
@@ -95,10 +95,10 @@ export default function FaqMain({ isHome = false }: { isHome: boolean }) {
                     value={item.id}
                     className="border-none"
                   >
-                    <AccordionTrigger className="rounded-lg bg-white/5 px-4 py-4 text-left hover:bg-white/20 sm:px-6">
+                    <AccordionTrigger className="mobileL:text-sm rounded-lg bg-white/5 px-4 py-4 text-left text-xs hover:bg-white/20 sm:px-6">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="rounded-lg bg-white/10 px-4 py-4 leading-6 text-gray-300 sm:px-6">
+                    <AccordionContent className="mobileL:text-sm rounded-lg bg-white/10 px-4 py-4 text-xs leading-6 text-gray-300 sm:px-6">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>

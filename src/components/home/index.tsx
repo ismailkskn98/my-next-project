@@ -13,19 +13,19 @@ export default function Home() {
 
   return (
     <main className="fluid gridContainer mt-9 w-full sm:mt-14 lg:mt-16">
-      <section className="relative z-10 mx-auto mb-24 flex w-full flex-col items-start justify-center gap-16 px-1 sm:px-4 md:px-0 lg:flex-row lg:justify-between lg:gap-3 xl:w-11/12">
+      <section className="mobileL:mb-16 mobileM:mb-12 mobileS:mb-10 relative z-10 mx-auto mb-8 flex w-full flex-col items-start justify-center gap-16 px-1 sm:px-4 md:mb-20 md:px-0 lg:flex-row lg:justify-between lg:gap-3 xl:w-11/12 2xl:mb-24">
         <HomeImage />
         <HomeRightCard />
       </section>
       <RoadMap isHome={true} />
       <section className="fluid gridContainer relative z-10 mb-8 mt-14 min-h-[320px] place-items-center items-center pb-5 lg:min-h-[450px] lg:py-28">
         <div className="fluid absolute -inset-24 -z-20 bg-homeStatsBg bg-cover bg-center bg-no-repeat opacity-10 lg:inset-1"></div>
-        <article className="row-span-3 flex w-full flex-col items-center gap-20 lg:gap-28">
+        <article className="mobileM:gap-16 row-span-3 flex w-full flex-col items-center gap-12 sm:gap-20 lg:gap-28">
           <PageTitle title={t("stats")} isHome={true} />
           <Stats isHome={true} />
         </article>
       </section>
-      <section className="relative z-10 mx-auto mb-16 mt-14 flex w-full flex-col items-center justify-center gap-16 lg:w-9/12">
+      <section className="mobileL:mt-10 relative z-10 mx-auto mb-16 mt-8 flex w-full flex-col items-center justify-center gap-16 sm:mt-14 lg:w-9/12">
         <PageTitle isFaq={true} title={t("faq")} isHome={true} />
         <FaqMain isHome={true} />
       </section>

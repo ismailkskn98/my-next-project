@@ -27,7 +27,7 @@ export default function Header() {
       className="flex flex-col items-center gap-2 overflow-hidden sm:gap-3"
     >
       <div
-        className={`${styles.titleShadow} px-3 pb-2 pt-3 font-raleway text-xl font-extrabold uppercase drop-shadow-xl sm:px-5 sm:pb-3 sm:pt-4 sm:text-2xl xl:px-8 xl:text-3xl`}
+        className={`${styles.titleShadow} mobileM:text-xl text-nowrap px-3 pb-2 pt-3 font-raleway text-lg font-extrabold uppercase drop-shadow-xl sm:px-5 sm:pb-3 sm:pt-4 sm:text-2xl xl:px-8 xl:text-3xl`}
       >
         <p className="header-item">{t("card.preSaleLive")}</p>
       </div>

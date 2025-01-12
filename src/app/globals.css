@@ -64,6 +64,12 @@ html {
   .navbar-item {
     @apply relative cursor-pointer text-nowrap rounded text-sm uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white lg:text-sm;
   }
+  .pageTitleH2 {
+    @apply relative z-10 text-nowrap font-raleway font-extrabold text-white before:absolute before:left-1/2 before:top-1/4 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:font-raleway before:font-extrabold before:text-logoGold/10 before:content-[var(--title)] after:absolute after:-bottom-3 after:left-1/2 after:h-[2px] after:w-20 after:-translate-x-1/2 after:bg-logoGold after:content-[''];
+  }
+  .pageMain {
+    @apply mobileS:px-2 mobileL:px-4 relative z-10 mx-auto mb-4 mt-10 flex w-full flex-col gap-8 px-1 pt-8 sm:gap-12 sm:px-8 sm:pt-12 md:mb-14 md:gap-16 md:pt-14 lg:mt-16 lg:w-11/12 lg:gap-20 lg:pt-16;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -74,7 +80,7 @@ html {
 
   /* Scroll bar arka planı */
   ::-webkit-scrollbar-track {
-    background-color: #000;
+    background-color: transparent;
     border-radius: 10px;
   }
 
