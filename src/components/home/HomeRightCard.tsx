@@ -18,19 +18,19 @@ export default function HomeRightCard() {
   return (
     <article
       ref={elementRef}
-      className="relative mx-auto w-full max-w-[450px] overflow-hidden rounded-xl bg-black/70 py-10 sm:max-w-[566px] md:bg-black/25 lg:mx-0 lg:px-4 2xl:px-7"
+      className="mobileL:px-10 relative mx-auto w-full overflow-hidden rounded-xl bg-black/70 px-4 py-10 sm:max-w-[566px] md:bg-black/25 lg:mx-0 lg:px-4 2xl:px-7"
     >
       <div
-        className={`${styles.cardBgTop} absolute bottom-0 left-0 h-20 w-full rounded-lg`}
+        className={`${styles.cardBgTop} mobileM:top-0 absolute -top-1 left-0 h-20 w-full rounded-lg`}
       ></div>
       <div
-        className={`${styles.cardBgBottom} absolute left-0 top-0 h-20 w-full rounded-lg`}
+        className={`${styles.cardBgBottom} absolute bottom-0 left-0 h-20 w-full rounded-lg`}
       ></div>
       <div
-        className={`${styles.cardBgLeft} absolute bottom-0 left-0 top-0 w-20 rounded-lg`}
+        className={`${styles.cardBgLeft} mobileM:left-0 absolute -left-2 bottom-0 top-0 w-20 rounded-lg`}
       ></div>
       <div
-        className={`${styles.cardBgRight} absolute bottom-0 right-0 top-0 w-20 rounded-lg`}
+        className={`${styles.cardBgRight} mobileM:right-0 absolute -right-2 bottom-0 top-0 w-20 rounded-lg`}
       ></div>
       <Card />
     </article>
