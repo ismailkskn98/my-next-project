@@ -88,9 +88,9 @@ export default async function RootLayout(props: {
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} className="h-full w-full">
+    <html lang={locale} className="overflow-x-hidden">
       <body
-        className={`h-full w-full bg-black ${ralewayFont.variable} ${geistFont.variable}`}
+        className={`relative min-h-full min-w-full overflow-x-hidden bg-white ${ralewayFont.variable} ${geistFont.variable}`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
