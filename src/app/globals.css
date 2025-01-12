@@ -9,20 +9,6 @@
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background-color: #000;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--logoGold100);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--logoGold);
-  border-radius: 10px;
-}
 
 .gridContainer {
   display: grid;
@@ -77,5 +63,29 @@ html {
 @layer utilities {
   .navbar-item {
     @apply relative cursor-pointer text-nowrap rounded text-sm uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white lg:text-sm;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Scroll bar genişliği */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Scroll bar arka planı */
+  ::-webkit-scrollbar-track {
+    background-color: #000;
+    border-radius: 10px;
+  }
+
+  /* Scroll bar üzerine gelindiğinde (hover) */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--logoGold100);
+  }
+
+  /* Scroll barın kaydırılabilir kısmı */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--logoGold);
+    border-radius: 10px;
   }
 }
