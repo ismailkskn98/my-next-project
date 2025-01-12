@@ -129,7 +129,7 @@
   },
   "About": {
     "pageTitle": "Hakkımızda",
-    "title": "C1 COIN Nedir?",
+    "title": "C1 COIN Nedir",
     "subtitle": "C1 COIN, kripto para dünyasını herkes için erişilebilir kılmak amacıyla kurulmuştur.",
     "description": "Kripto paralar, son yıllarda finansal dünyada çığır açan ve küresel ekonomiyi değiştirme potansiyeline sahip yenilikçi bir varlık sınıfıdır. Ancak, bu heyecan verici alana adım atmak isteyen birçok kişi, karmaşık terimler ve teknik detaylar karşısında geri adım atmaktadır. C1 COIN, bu sorunu çözmek ve kripto para dünyasını herkes için erişilebilir kılmak amacıyla kurulmuştur.",
     "buyTokens": "TOKEN AL",
@@ -138,7 +138,7 @@
       "subtitle": "bitcoin hakkında"
     },
     "whyc1Coin": {
-      "title": "Neden C1 COIN?",
+      "title": "Neden C1 COIN",
       "content": {
         "comprehensiveCoverage": {
           "title": "Kapsamlı Kapsama Alanı",

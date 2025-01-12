@@ -129,7 +129,7 @@
   },
   "About": {
     "pageTitle": "About",
-    "title": "What is C1 COIN?",
+    "title": "What is C1 COIN",
     "subtitle": "C1 COIN was established with the aim of making the world of cryptocurrencies accessible to everyone.",
     "description": "Cryptocurrencies are an innovative asset class that has revolutionized the financial world in recent years and has the potential to change the global economy. However, many people who wish to enter this exciting field hesitate due to complex terms and technical details. C1 Coin was founded with the aim of solving this problem and making the world of cryptocurrencies accessible to everyone.",
     "buyTokens": "BUY TOKENS",
@@ -138,7 +138,7 @@
       "subtitle": "about bitcoin"
     },
     "whyc1Coin": {
-      "title": "Why C1 COIN?",
+      "title": "Why C1 COIN",
       "content": {
         "comprehensiveCoverage": {
           "title": "Comprehensive Coverage",

@@ -9,7 +9,8 @@ export type StatsItem = {
   id: number;
   value: number;
   unit?: string;
-  translationKey: string;
+  title: string;
+  description: string;
 };
 export default function Stats({ isHome = false }: { isHome?: boolean }) {
   const t = useTranslations("About");
@@ -22,19 +23,22 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
       id: 1,
       value: 25,
       unit: "%",
-      translationKey: t("stats.marketing", { rate: "25%" }),
+      title: "pazarlama ve tanıtım",
+      description: t("stats.marketing", { rate: "25%" }),
     },
     {
       id: 2,
       value: 20,
       unit: "%",
-      translationKey: t("stats.investor", { rate: "20%" }),
+      title: "aktif yatırımcılar",
+      description: t("stats.investor", { rate: "20%" }),
     },
     {
       id: 3,
       value: 55,
       unit: "%",
-      translationKey: t("stats.exchange", { rate: "55%" }),
+      title: "borsaya giriş",
+      description: t("stats.exchange", { rate: "55%" }),
     },
   ];
 
@@ -54,6 +58,9 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
           key={item.id}
           className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur"
         >
+          <h5 className="text-3xl font-semibold capitalize text-white sm:text-4xl lg:text-4xl">
+            {item.title}
+          </h5>
           <div className="flex items-end">
             {inView && (
               <CountUp
@@ -63,15 +70,15 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
                 enableScrollSpy={true}
                 scrollSpyDelay={500}
                 scrollSpyOnce={true}
-                className="text-4xl font-extrabold sm:text-5xl lg:text-6xl"
+                className="text-4xl font-extrabold text-logoGold sm:text-4xl lg:text-5xl"
               />
             )}
-            <span className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
+            <span className="text-4xl font-bold text-logoGold sm:text-4xl lg:text-5xl">
               {item.unit}
             </span>
           </div>
-          <p className="text-wrap text-center text-sm leading-10 tracking-wide text-white/80 sm:text-base">
-            {item.translationKey}
+          <p className="text-wrap px-4 text-center text-sm leading-10 tracking-wide text-white/80 sm:text-base">
+            {item.description}
           </p>
         </div>
       ))}

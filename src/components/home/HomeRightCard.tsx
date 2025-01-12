@@ -18,7 +18,7 @@ export default function HomeRightCard() {
   return (
     <article
       ref={elementRef}
-      className="relative mx-auto w-full max-w-[450px] rounded-xl bg-[#111]/70 py-10 sm:max-w-[566px] md:bg-black/50 lg:mx-0 lg:px-4 2xl:px-7"
+      className="relative mx-auto w-full max-w-[450px] overflow-hidden rounded-xl bg-[#111]/70 py-10 sm:max-w-[566px] md:bg-black/50 lg:mx-0 lg:px-4 2xl:px-7"
     >
       <div
         className={`${styles.cardBgTop} absolute bottom-0 left-0 h-20 w-full rounded-lg`}
