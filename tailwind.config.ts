@@ -115,6 +115,15 @@ export default {
       tajaval: ["var(--tajawal-font)", "sans-serif"],
       raleway: ["var(--raleway-font)", "sans-serif"],
     },
+    screens: {
+      mobileS: "320px",
+      mobileM: "375px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
   },
   plugins: [animate],
 } satisfies Config;

@@ -1,0 +1,11 @@
+.apexcharts-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.apexcharts-legend-series {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 16px;
+}

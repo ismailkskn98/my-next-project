@@ -7,7 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { MilestoneItem } from ".";
-import "./VerticalTimelineStyles.css";
+import "./verticalTimelineStyles.css";
 
 export default function VerticalTimelines({
   milestones,

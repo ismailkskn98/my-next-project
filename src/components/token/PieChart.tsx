@@ -1,7 +1,7 @@
 "use client";
 
 import Chart from "react-apexcharts";
-
+import "./pieChartStyle.css";
 export default function PieChart() {
   const customColors = ["#F5E6CA", "#1E293B", "#4A90E2", "#FF6F00", "#FEC057"];
 
