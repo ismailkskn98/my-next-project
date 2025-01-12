@@ -19,13 +19,13 @@ export default function MobilContact() {
   });
 
   return (
-    <section className="mx-auto flex items-center justify-center bg-transparent px-4 text-center text-white lg:mx-0">
+    <section className="mobileL:px-3 mx-auto flex items-center justify-center bg-transparent px-1 text-center text-white sm:px-4 lg:mx-0">
       <div ref={elementRef} className="max-w-3xl space-y-6">
         <div className="relative mx-auto flex w-min items-center justify-center gap-4 font-raleway text-6xl font-bold uppercase leading-tight sm:text-7xl">
           <span>c1</span>
           <span className="flex items-center justify-center">
             c
-            <span className="text-logoGold relative">
+            <span className="relative text-logoGold">
               o
               <Image
                 src={"/images/logo.png"}
@@ -38,7 +38,7 @@ export default function MobilContact() {
             ın
           </span>
         </div>
-        <h2 className="re text-4xl font-medium capitalize">
+        <h2 className="mobileL:text-4xl text-3xl font-medium capitalize">
           {t("mobilContactSubtitle")}
         </h2>
         <p className="mx-auto max-w-2xl text-white/80">
@@ -47,7 +47,7 @@ export default function MobilContact() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
             href={NavPaths.ABOUT}
-            className="bg-logoGold hover:bg-logoGold-100 inline-flex h-10 items-center justify-center rounded-md px-8 text-base font-medium capitalize text-white transition-colors"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-logoGold px-8 text-base font-medium capitalize text-white transition-colors hover:bg-logoGold-100"
           >
             {t("about")}
           </Link>

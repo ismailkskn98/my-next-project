@@ -12,7 +12,7 @@ export default function Home() {
   const t = useTranslations("Home");
 
   return (
-    <main className="fluid gridContainer mt-10 w-full sm:mt-14 lg:mt-16">
+    <main className="fluid gridContainer mt-9 w-full sm:mt-14 lg:mt-16">
       <section className="relative z-10 mx-auto mb-24 flex w-full flex-col items-start justify-center gap-16 px-1 sm:px-4 md:px-0 lg:flex-row lg:justify-between lg:gap-3 xl:w-11/12">
         <HomeImage />
         <HomeRightCard />
