@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header className="fluid gridContainer relative z-10 space-y-3 bg-black/25">
+    <header className="fluid gridContainer relative z-10 space-y-3 bg-gradient-to-b from-black/80 pb-2">
       <section className="fluid gridContainer span-row-3 w-full bg-black/60 px-1 pb-2 pt-3 backdrop-blur-sm lg:hidden">
         <article className="flex w-full items-center justify-end gap-2">
           <Language />

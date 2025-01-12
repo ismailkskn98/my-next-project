@@ -6,6 +6,23 @@
   --logoGold: #fec057;
   --logoGold100: #f8d664cc;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--logoGold100);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--logoGold);
+  border-radius: 10px;
+}
 
 .gridContainer {
   display: grid;
