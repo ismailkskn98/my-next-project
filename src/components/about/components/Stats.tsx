@@ -23,7 +23,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
       id: 1,
       value: 25,
       unit: "%",
-      title: "pazarlama ve tanıtım",
+      title: "pazarlama tanıtım",
       description: t("stats.marketing", { rate: "25%" }),
     },
     {
@@ -58,7 +58,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
           key={item.id}
           className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur"
         >
-          <h5 className="text-3xl font-semibold capitalize text-white sm:text-4xl lg:text-4xl">
+          <h5 className="px-4 text-center text-3xl font-semibold capitalize text-white sm:text-3xl">
             {item.title}
           </h5>
           <div className="flex items-end">
@@ -70,10 +70,10 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
                 // enableScrollSpy={true}
                 scrollSpyDelay={500}
                 scrollSpyOnce={true}
-                className="text-4xl font-extrabold text-logoGold sm:text-4xl lg:text-5xl"
+                className="text-3xl font-extrabold text-logoGold lg:text-4xl"
               />
             )}
-            <span className="text-4xl font-bold text-logoGold sm:text-4xl lg:text-5xl">
+            <span className="text-3xl font-bold text-logoGold lg:text-4xl">
               {item.unit}
             </span>
           </div>
