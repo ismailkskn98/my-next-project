@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/accordion";
 import classNames from "classnames";
 
-// FAQ verilerini tanımlayın
 const faqData = [
   {
     category: "regular",
@@ -67,7 +66,7 @@ export default function FaqMain({ isHome = false }: { isHome: boolean }) {
       <div className="mx-auto space-y-12">
         <Tabs defaultValue="regular" className="w-full space-y-8">
           <TabsList
-            className={classNames("w-full items-center bg-transparent", {
+            className={classNames("flex w-full items-center bg-transparent", {
               "justify-center lg:justify-start": !isHome,
               "justify-center lg:justify-center": isHome,
             })}
@@ -76,7 +75,7 @@ export default function FaqMain({ isHome = false }: { isHome: boolean }) {
               <TabsTrigger
                 key={tab.category}
                 value={tab.category}
-                className="border-b-2 border-transparent bg-transparent px-2 pb-2 text-xs font-medium text-white/90 sm:px-3 sm:text-sm md:text-base"
+                className="mobileL:px-2 mobileL:pb-2 mobileM:text-xs mobileS:text-[10px] border-b-2 border-transparent bg-transparent px-1 pb-1 text-[9px] font-medium text-white/90 sm:px-3 sm:text-sm md:text-base"
               >
                 {tab.title}
               </TabsTrigger>
