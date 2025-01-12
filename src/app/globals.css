@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  scrollbar-gutter: stable;
-} */
+:root {
+  --logoGold: #fec057;
+  --logoGold100: #f8d664cc;
+}
 
 html,
 body {
@@ -93,70 +94,6 @@ body {
 @layer utilities {
   .navbar-item {
     @apply relative cursor-pointer text-nowrap rounded text-sm uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white lg:text-sm;
-  }
-}
-
-.vertical-timeline-element-content {
-  position: relative;
-  margin-left: 20px !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-
-  border-radius: 0.25em;
-  padding: 1em;
-  box-shadow: none !important;
-}
-
-.vertical-timeline {
-  width: 87% !important;
-  max-width: 1170px !important;
-  margin: 0 auto !important;
-  position: relative !important;
-  padding: 2em 0 !important;
-  float: right !important;
-}
-
-.vertical-timeline:before {
-  content: "" !important;
-  position: absolute !important;
-  top: 20px !important;
-  left: -25px !important;
-  height: 98% !important;
-  width: 4px !important;
-  background: rgba(254, 254, 254, 0.1) !important;
-}
-
-.vertical-timeline-element-icon {
-  position: absolute !important;
-  top: 3% !important;
-  left: -4% !important;
-  width: 30px !important;
-  height: 2px !important;
-  border-radius: 0px !important;
-  border: 1px solid rgba(254, 254, 254, 0.1) !important;
-  box-shadow: none !important;
-}
-
-.vertical-timeline-element-date {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-@media screen and (max-width: 650px) {
-  .vertical-timeline {
-    width: 87% !important;
-    max-width: 1170px !important;
-    margin: 0 auto !important;
-    position: relative !important;
-    padding: 1.3em 0 !important;
-    float: right !important;
-  }
-  .vertical-timeline-element-icon {
-    left: -6% !important;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .vertical-timeline-element-icon {
-    left: -8% !important;
   }
 }
 

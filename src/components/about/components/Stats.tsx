@@ -44,7 +44,6 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
 
   return (
     <div
-      ref={ref}
       className={classNames(
         "mx-auto grid h-full min-h-[448px] w-full grid-cols-1 place-items-center gap-x-5 gap-y-7 text-white sm:min-h-[528px] sm:gap-x-7 sm:gap-y-12 md:min-h-[228px] md:grid-cols-3 md:gap-y-7 lg:max-h-[414px]",
         {
@@ -55,6 +54,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
     >
       {statsData.map((item) => (
         <div
+          ref={ref}
           key={item.id}
           className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur"
         >
@@ -67,7 +67,7 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
                 start={0}
                 end={item.value}
                 duration={2.5}
-                enableScrollSpy={true}
+                // enableScrollSpy={true}
                 scrollSpyDelay={500}
                 scrollSpyOnce={true}
                 className="text-4xl font-extrabold text-logoGold sm:text-4xl lg:text-5xl"

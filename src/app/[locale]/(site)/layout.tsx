@@ -2,7 +2,6 @@ import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import Particles from "@/components/ui/particles";
 import { Toaster } from "sonner";
-
 export default function MainLayout({
   children,
 }: Readonly<{

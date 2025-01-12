@@ -7,6 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { MilestoneItem } from ".";
+import "./VerticalTimelineStyles.css";
 
 export default function VerticalTimelines({
   milestones,
@@ -14,8 +15,8 @@ export default function VerticalTimelines({
   milestones: MilestoneItem[];
 }) {
   return (
-    <section className="mt-10 block lg:hidden">
-      <div className="container mx-auto px-4">
+    <section className="mt-10 flex items-center justify-center lg:hidden">
+      <div className="container mx-auto overflow-x-hidden px-1 sm:px-4">
         <VerticalTimeline>
           {milestones.map((milestone, index) => (
             <VerticalTimelineElement
@@ -33,13 +34,15 @@ export default function VerticalTimelines({
                 color: "#fff",
               }}
             >
-              <div className="mb-4 flex items-center justify-between">
+              <div className="mb-4 flex flex-col items-start justify-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
                 <h3 className="vertical-timeline-element-title md: text-lg font-bold text-white">
                   {milestone.title}
                 </h3>
                 <div className="flex items-center font-semibold text-white/80">
                   <DollarSign className="h-4 w-4" />
-                  <span>{milestone.value.replace("$", "")}</span>
+                  <span className="text-logoGold">
+                    {milestone.value.replace("$", "")}
+                  </span>
                 </div>
               </div>
               <p className="mt-2 text-white/70">{milestone.description}</p>
