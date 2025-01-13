@@ -21,7 +21,8 @@ export default function ForgotPassword() {
   return (
     <article className="relative flex h-full w-full items-center justify-center overflow-x-hidden bg-left-top bg-no-repeat px-4 md:basis-2/5">
       <div className="absolute bottom-0 right-0 h-24 w-24 rotate-[180deg] bg-loginBg bg-cover bg-center bg-no-repeat sm:h-32 sm:w-32"></div>
-      <div className="flex w-full min-w-[full] max-w-[417px] flex-col items-center gap-10 sm:min-w-[400px]">
+      <div className="absolute bottom-0 right-0 h-11 w-11 rotate-[180deg] bg-loginBg bg-cover bg-center bg-no-repeat sm:h-32 sm:w-32"></div>
+      <div className="z-10flex relative w-full min-w-[full] max-w-[417px] flex-col items-center gap-10 sm:min-w-[400px]">
         <div className="flex flex-col items-center justify-center gap-5">
           <FormTitle title={t("title")} />
           <p className="px-4 text-center text-sm">{t("subtitle")}</p>
