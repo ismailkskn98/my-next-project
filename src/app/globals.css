@@ -10,6 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr min(1660px, 94%) 1fr;
@@ -68,7 +74,7 @@ html {
     @apply relative z-10 text-nowrap font-raleway font-extrabold text-white before:absolute before:left-1/2 before:top-1/4 before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:font-raleway before:font-extrabold before:text-logoGold/10 before:content-[var(--title)] after:absolute after:-bottom-3 after:left-1/2 after:h-[2px] after:w-20 after:-translate-x-1/2 after:bg-logoGold after:content-[''];
   }
   .pageMain {
-    @apply mobileS:px-2 mobileL:px-4 relative z-10 mx-auto mb-4 mt-10 flex w-full flex-col gap-8 px-1 pt-8 sm:gap-12 sm:px-8 sm:pt-12 md:mb-14 md:gap-16 md:pt-14 lg:mt-16 lg:w-11/12 lg:gap-20 lg:pt-16;
+    @apply relative z-10 mx-auto mb-4 mt-10 flex w-full flex-col gap-8 px-1 pt-8 mobileS:px-2 mobileL:px-4 sm:gap-12 sm:px-8 sm:pt-12 md:mb-14 md:gap-16 md:pt-14 lg:mt-16 lg:w-11/12 lg:gap-20 lg:pt-16;
   }
 }
 

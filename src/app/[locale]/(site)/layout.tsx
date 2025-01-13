@@ -19,7 +19,7 @@ export default function MainLayout({
         refresh
         staticity={50}
       />
-      <main className="fluid gridContainer h-full w-full font-tajaval">
+      <main className="fluid gridContainer h-full min-h-screen w-full font-tajaval">
         <Header />
         {children}
         <Footer />

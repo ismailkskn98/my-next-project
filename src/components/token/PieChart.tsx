@@ -1,7 +1,10 @@
 "use client";
-
-import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
 import "./pieChartStyle.css";
+
+// Bu kod, react-apexcharts kütüphanesini sadece istemci tarafında yükler. Böylece, sunucuda window hatası oluşmaz.
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
 export default function PieChart() {
   const customColors = ["#F5E6CA", "#1E293B", "#4A90E2", "#FF6F00", "#FEC057"];
 
