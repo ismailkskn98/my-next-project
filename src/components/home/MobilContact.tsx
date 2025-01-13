@@ -19,26 +19,26 @@ export default function MobilContact() {
   });
 
   return (
-    <section className="mobileL:px-3 mx-auto flex items-center justify-center bg-transparent px-1 text-center text-white sm:px-4 lg:mx-0">
+    <section className="mx-auto flex items-center justify-center bg-transparent px-1 text-center text-white mobileL:px-3 sm:px-4 lg:mx-0">
       <div ref={elementRef} className="max-w-3xl space-y-6">
         <div className="relative mx-auto flex w-min items-center justify-center gap-4 font-raleway text-6xl font-bold uppercase leading-tight sm:text-7xl">
           <span>c1</span>
           <span className="flex items-center justify-center">
             c
-            <span className="relative text-logoGold">
+            <span className="relative overflow-hidden text-logoGold">
               o
               <Image
                 src={"/images/logo.png"}
                 alt="c1coin logo"
-                width={50}
+                width={55}
                 height={50}
-                className="absolute left-1/2 top-1/2 -z-10 max-h-[35px] max-w-[35px] -translate-x-1/2 -translate-y-1/2 object-center drop-shadow-xl"
+                className="absolute left-1/2 top-1/2 -z-10 max-h-[38px] max-w-[34px] -translate-x-1/2 -translate-y-1/2 object-center drop-shadow-xl"
               />
             </span>
             ın
           </span>
         </div>
-        <h2 className="mobileL:text-4xl text-3xl font-medium capitalize">
+        <h2 className="text-3xl font-medium capitalize mobileL:text-4xl">
           {t("mobilContactSubtitle")}
         </h2>
         <p className="mx-auto max-w-2xl text-white/80">

@@ -52,7 +52,7 @@ export default function MobilNav() {
           </SheetTitle>
         </SheetHeader>
         <main className="row-span-4">
-          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-5 text-lg">
+          <SheetDescription className="flex max-h-min w-full flex-col items-center justify-between gap-6 text-lg">
             {navItems.map((item, index) => {
               return (
                 <SheetTrigger key={index} asChild>
@@ -73,7 +73,7 @@ export default function MobilNav() {
         </main>
         <SheetFooter>
           <div className="text-grey-60 flex items-center justify-center gap-2 md:gap-[10px] 2xl:gap-[14px]">
-            <Language />
+            <Language isAuth={false} />
           </div>
         </SheetFooter>
       </SheetContent>

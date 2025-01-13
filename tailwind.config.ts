@@ -64,6 +64,8 @@ export default {
         footerBgDeneme: "url('/images/footer-bg-deneme.svg')",
         homeStatsBg: "url('/images/home-stats-bg.jpg')",
         aboutBg: "url('/images/about.jpg')",
+        loginBg: "url('/images/login-bg.svg')",
+        authTopBg: "url('/images/auth-top.svg')",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -124,6 +126,9 @@ export default {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
+    },
+    dropShadow: {
+      authTopBgShadow: "5px 11px 35px #000000",
     },
   },
   plugins: [animate],

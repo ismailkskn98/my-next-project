@@ -211,5 +211,67 @@
   },
   "FAQ": {
     "pageTitle": "Frequently Asked Questions"
+  },
+  "Login": {
+    "title": "Login",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "password": {
+        "label": "Password"
+      },
+      "submitting": "Submitting...",
+      "submit": "Login",
+      "register": "Don't have an account? Sign Up",
+      "forgotPassword": "Forgot your password?",
+      "send": "Send"
+    }
+  },
+  "Register": {
+    "title": "Create Account",
+    "successMessage": "Your account has been successfully created!",
+    "errorMessage": "An error occurred. Please try again.",
+    "form": {
+      "firstname": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "lastname": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "phonenumber": {
+        "label": "Phone Number",
+        "placeholder": "555 555 55 55"
+      },
+      "password": {
+        "label": "Password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password"
+      },
+      "submitting": "Creating account...",
+      "submit": "Create Account",
+      "login": "Already have an account? Log In"
+    }
+  },
+  "ForgotPassword": {
+    "title": "Password Reset",
+    "subtitle": "We need your email address to send you the password reset link.",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "example@email.com"
+      },
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "login": "Login"
+    }
   }
 }

@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import { MdEmail } from "react-icons/md";
 import { GrSend } from "react-icons/gr";
 import { Link, NavPaths } from "@/i18n/routing";
 
@@ -40,7 +39,7 @@ export default function FooterMain() {
           <nav className="flex flex-col items-center gap-3">
             {companyLinks.map((link, index) => (
               <Link
-                key={index * Date.now()}
+                key={index * Math.random() * 99}
                 href={link.href}
                 className="navbar-item"
               >
@@ -54,7 +53,7 @@ export default function FooterMain() {
           <nav className="flex flex-col items-center gap-3">
             {servicesLinks.map((link, index) => (
               <Link
-                key={index * Date.now()}
+                key={index * Math.random() * 99}
                 href={link.href}
                 className="navbar-item"
               >
@@ -69,16 +68,15 @@ export default function FooterMain() {
           <p className="capitalize">{t("newsletter.title")}</p>
           <p>{t("newsletter.subtitle")}</p>
         </div>
-        <a
-          href="#"
+        <Link
+          href={NavPaths.CONTACT}
           className="group flex items-center justify-center gap-2 sm:justify-start"
         >
-          <MdEmail className="text-white transition-all duration-300 group-hover:text-white" />
-          <span className="transition-all duration-300 group-hover:text-black">
+          <span className="transition-all duration-300 group-hover:text-logoGold">
             {t("newsletter.emailPlaceholder")}
           </span>
-          <GrSend className="text-white transition-all duration-300 group-hover:text-white" />
-        </a>
+          <GrSend className="text-logoGold transition-all duration-300" />
+        </Link>
       </article>
     </section>
   );

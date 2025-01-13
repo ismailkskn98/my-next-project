@@ -5,7 +5,7 @@
       "about": "Hakkımızda",
       "roadmap": "Yol Haritası",
       "token": "Token",
-      "team": "Ekip",
+      "team": "Takım",
       "faq": "SSS",
       "blog": "Blog",
       "contact": "İletişim"
@@ -211,5 +211,70 @@
   },
   "FAQ": {
     "pageTitle": "Sıkça Sorulan Sorular"
+  },
+  "Login": {
+    "title": "Giriş Yap",
+    "successMessage": "Başarıyla giriş yapıldı!",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "form": {
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@email.com"
+      },
+      "password": {
+        "label": "Sifre"
+      },
+      "submitting": "Gönderiliyor...",
+      "submit": "Giriş Yap",
+      "register": "Hesabın yok mu? Kayıt Ol",
+      "forgotPassword": "Sifrenizi mi unuttunuz?",
+      "Send": "Gönder",
+      "login": "Giriş Yap"
+    }
+  },
+  "Register": {
+    "title": "Hesap Oluştur",
+    "successMessage": "Hesabınız başarıyla oluşturuldu!",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "form": {
+      "firstname": {
+        "label": "Ad",
+        "placeholder": "Adınızı giriniz"
+      },
+      "lastname": {
+        "label": "Soyad",
+        "placeholder": "Soyadınızı giriniz"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@email.com"
+      },
+      "phonenumber": {
+        "label": "Telefon numarası",
+        "placeholder": "555 555 55 55"
+      },
+      "password": {
+        "label": "Şifre"
+      },
+      "confirmPassword": {
+        "label": "Şifre Tekrarı"
+      },
+      "submitting": "Hesap oluşturuluyor...",
+      "submit": "Hesap Oluştur",
+      "login": "Zaten bir hesabınız var mı? Giriş Yap"
+    }
+  },
+  "ForgotPassword": {
+    "title": "Şifre Yenileme",
+    "subtitle": "Şifre yenileme bağlantısını gönderebilmemiz için e-posta adresinize ihtiyacımız var.",
+    "form": {
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@email.com"
+      },
+      "submit": "Gönder",
+      "submitting": "Gönderiliyor...",
+      "login": "Giriş Yap"
+    }
   }
 }

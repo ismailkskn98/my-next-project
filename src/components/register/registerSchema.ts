@@ -1,3 +1,4 @@
+import { isValidNumber } from "libphonenumber-js";
 import * as Yup from "yup";
 
 const registerSchema = Yup.object().shape({
@@ -20,8 +21,16 @@ const registerSchema = Yup.object().shape({
   confirmPassword: Yup.string()
     .oneOf([Yup.ref("password")], "Şifreler eşleşmiyor")
     .required("Şifre tekrarı gereklidir"),
+  kvkkAgreement: Yup.boolean().oneOf([true]).required("Bu alan zorunludur"),
+  membershipAgreement: Yup.boolean()
+    .oneOf([true])
+    .required("Bu alan zorunludur"),
   phoneNumber: Yup.string()
-    .matches(/^[0-9]{10}$/, "Geçerli bir telefon numarası giriniz (10 haneli)")
+    .test(
+      "is-valid-phone",
+      "Geçerli bir telefon numarası giriniz (örn: +123456789)",
+      (value) => (value ? isValidNumber(value, undefined) : false),
+    )
     .required("Telefon numarası gereklidir"),
 });
 

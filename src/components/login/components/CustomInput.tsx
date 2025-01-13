@@ -12,20 +12,21 @@ const CustomInput: React.FC<CustomInputProps> = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <div className="mb-4">
+    <div className="flex w-full flex-col items-start gap-2">
       <label
         htmlFor={props.name}
-        className="block text-sm font-medium text-gray-700"
+        className="block text-xs font-medium text-black sm:text-sm"
       >
         {label}
       </label>
       <input
         {...field}
         {...props}
-        className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500"
+        autoComplete={props.type === "password" ? "new-password" : "of"}
+        className="block w-full rounded-md border border-gray-300 px-3 py-2 focus:border-logoGold focus:outline-none"
       />
       {meta.touched && meta.error ? (
-        <div className="mt-1 text-sm text-red-600">{meta.error}</div>
+        <div className="px-1 text-xs text-red-600">*{meta.error}</div>
       ) : null}
     </div>
   );

@@ -4,11 +4,10 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-
 import { CustomInput } from "./CustomInput";
 import CustomTextarea from "./CustomTextarea";
-import HandleSubmit from "./HandleSubmit";
 import { useTranslations } from "next-intl";
+import handleSubmitContact from "./handleSubmit";
 
 export type InitialValuesType = {
   name: string;
@@ -46,7 +45,7 @@ export default function ContactMain() {
             initialValues={initialValues}
             validationSchema={ContactSchema}
             onSubmit={(values, actions) =>
-              HandleSubmit(
+              handleSubmitContact(
                 values,
                 actions,
                 t("successMessage"),
@@ -59,11 +58,13 @@ export default function ContactMain() {
                 <div className="flex w-full flex-col items-start gap-5 md:flex-row md:items-center">
                   <CustomInput
                     name="name"
+                    id="name"
                     label={t("form.name.label")}
                     placeholder={t("form.name.placeholder")}
                   />
                   <CustomInput
                     name="email"
+                    id="email"
                     label={t("form.email.label")}
                     type="email"
                     placeholder={t("form.email.placeholder")}

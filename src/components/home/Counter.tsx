@@ -11,8 +11,7 @@ interface timeItems {
 
 export default function Counter() {
   const t = useTranslations("Home");
-  // Yılı, ayı (0'dan başla), gün, saat, dakika ve saniye
-  const campaignEndDate = useMemo(() => new Date(2025, 0, 20, 23, 59, 59), []); // Kampanya bitiş tarihi
+  const campaignEndDate = useMemo(() => new Date(2025, 0, 20, 23, 59, 59), []);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -21,13 +20,9 @@ export default function Counter() {
   });
 
   useEffect(() => {
-    // const targetDate = new Date(); // şuanki tarihi ve saati temsil ediyor
-    // targetDate.getDate() // bugünü veriyor sayı olarak (11)
-
     const timer = setInterval(() => {
-      // her 1 saniye de bir burası çalışacak
-      const now = new Date().getTime(); // Şu anki zaman milisaniye cinsinden alınıyor.
-      const distance = campaignEndDate.getTime() - now; // Hedef tarih ile şu anki zaman arasındaki fark. Bu farkı milisaniye cinsinden alıyoruz.
+      const now = new Date().getTime();
+      const distance = campaignEndDate.getTime() - now;
 
       if (distance < 0) {
         clearInterval(timer);
@@ -79,16 +74,16 @@ export default function Counter() {
   return (
     <div
       ref={counterItemContainer}
-      className="mobileL:gap-4 flex w-full items-center justify-around gap-2 rounded-lg bg-white/5 px-3 py-3 sm:gap-5 xl:gap-7"
+      className="flex w-full items-center justify-around gap-2 rounded-lg bg-white/5 px-3 py-3 mobileL:gap-4 sm:gap-5 xl:gap-7"
     >
       {timeItems.map((item, index) => (
         <div key={index} className="counter-item flex flex-col items-center">
-          <div className="mobileL:text-[38px] mobileM:text-3xl mobileS:text-2xl relative text-xl font-bold lg:text-5xl xl:text-6xl">
+          <div className="relative text-xl font-bold mobileS:text-2xl mobileM:text-3xl mobileL:text-[38px] lg:text-5xl xl:text-6xl">
             <div className="text-logoGold">
               {item.value.toString().padStart(2, "0")}
             </div>
           </div>
-          <div className="mobileL:text-xs mt-2 text-[10px] uppercase sm:text-sm">
+          <div className="mt-2 text-[10px] uppercase mobileL:text-xs sm:text-sm">
             {item.title}
           </div>
         </div>

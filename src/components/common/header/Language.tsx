@@ -16,8 +16,9 @@ import { useRef, useTransition } from "react";
 import { useParams } from "next/navigation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import classNames from "classnames";
 
-export default function Language() {
+export default function Language({ isAuth = false }: { isAuth: boolean }) {
   const languageSelectRef = useRef<HTMLDivElement>(null);
   const locale = useLocale();
   const router = useRouter();
@@ -27,11 +28,13 @@ export default function Language() {
   const t = useTranslations("Header");
 
   useGSAP(() => {
-    gsap.from(languageSelectRef.current, {
-      opacity: 0,
-      y: 100,
-      duration: 0.5,
-    });
+    if (!isAuth) {
+      gsap.from(languageSelectRef.current, {
+        opacity: 0,
+        y: 100,
+        duration: 0.5,
+      });
+    }
   });
 
   return (
@@ -54,10 +57,18 @@ export default function Language() {
           });
         }}
       >
-        <SelectTrigger className="justify-between gap-2 border-none text-xs text-white shadow-none outline-none lg:text-base xl:gap-4">
+        <SelectTrigger
+          className={classNames(
+            "justify-between gap-2 border-none text-xs shadow-none outline-none lg:text-base xl:gap-4",
+            {
+              "text-white": !isAuth,
+              "text-black": isAuth,
+            },
+          )}
+        >
           <SelectValue placeholder="" />
         </SelectTrigger>
-        <SelectContent className="border-logoGold max-h-[200px] !overflow-visible overflow-y-auto bg-black/50 backdrop-blur-sm">
+        <SelectContent className="max-h-[200px] !overflow-visible overflow-y-auto border-logoGold bg-black/50 backdrop-blur-sm">
           <SelectGroup>
             <SelectLabel className="pointer-events-none mb-2 text-center text-sm text-gray-400">
               {t("language")}
@@ -69,14 +80,14 @@ export default function Language() {
                   alt="english"
                   width={30}
                   height={30}
-                  className="border-logoGold-100 h-5 w-5 rounded-full border border-solid object-cover object-center lg:h-6 lg:w-6"
+                  className="h-5 w-5 rounded-full border border-solid border-logoGold-100 object-cover object-center lg:h-6 lg:w-6"
                 />
                 <span>EN</span>
               </div>
             </SelectItem>
             <SelectItem
               value="tr"
-              className="hover:bg-logoGold text-white transition-all duration-200"
+              className="text-white transition-all duration-200 hover:bg-logoGold"
             >
               <div className="flex items-center gap-1 text-sm lg:text-base xl:gap-2">
                 <Image

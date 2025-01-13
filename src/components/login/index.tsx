@@ -1,67 +1,86 @@
 "use client";
 import React from "react";
-import { Formik, Form } from "formik";
-import CustomInput from "./components/CustomInput";
+import { useTranslations } from "next-intl";
+import { Formik, Form, type FormikHelpers } from "formik";
+import { Link, NavPaths } from "@/i18n/routing";
 import loginSchema from "./loginSchema";
+import handleSubmitLogin from "./handleSubmit";
+import CustomInput from "./components/CustomInput";
+import FormTitle from "../common/FormTitle";
 
-interface LoginFormValues {
+export type LoginFormValues = {
   email: string;
   password: string;
-}
+};
 
-const Login: React.FC = () => {
-  const initialValues: LoginFormValues = {
-    email: "",
-    password: "",
-  };
+const initialValues: LoginFormValues = {
+  email: "",
+  password: "",
+};
 
-  const handleSubmit = (values: LoginFormValues) => {
-    console.log(values);
-  };
-
+export default function LoginForm() {
+  const t = useTranslations("Login");
   return (
-    <div className="flex min-h-screen flex-col justify-center bg-gray-100 py-12 sm:px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Hesabınıza giriş yapın
-        </h2>
-      </div>
-
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10">
+    <article className="relative flex h-full w-full items-center justify-center overflow-x-hidden bg-left-top bg-no-repeat px-8 lg:basis-2/5">
+      <div className="absolute bottom-0 right-0 h-24 w-24 rotate-[180deg] bg-loginBg bg-cover bg-center bg-no-repeat sm:h-32 sm:w-32"></div>
+      <div className="flex w-full min-w-[full] max-w-[417px] flex-col items-center gap-10 sm:min-w-[400px]">
+        <FormTitle title={t("title")} />
+        <div className="w-full">
           <Formik
             initialValues={initialValues}
             validationSchema={loginSchema}
-            onSubmit={handleSubmit}
+            onSubmit={(
+              values: LoginFormValues,
+              actions: FormikHelpers<LoginFormValues>,
+            ) =>
+              handleSubmitLogin(
+                values,
+                actions,
+                t("successMessage"),
+                t("errorMessage"),
+              )
+            }
           >
-            <Form className="space-y-6">
-              <CustomInput
-                name="email"
-                label="E-posta"
-                type="email"
-                placeholder="ornek@email.com"
-              />
-              <CustomInput
-                name="password"
-                label="Şifre"
-                type="password"
-                placeholder="********"
-              />
-
-              <div>
-                <button
-                  type="submit"
-                  className="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  Giriş Yap
-                </button>
-              </div>
-            </Form>
+            {({ isSubmitting }) => (
+              <Form className="flex w-full flex-col items-start gap-7">
+                <CustomInput
+                  name="email"
+                  label={t("form.email.label")}
+                  type="email"
+                  placeholder={t("form.email.placeholder")}
+                />
+                <CustomInput
+                  name="password"
+                  label={t("form.password.label")}
+                  type="password"
+                  placeholder="********"
+                />
+                <div className="flex w-full flex-col items-center justify-center gap-6">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="flex w-min justify-center text-nowrap rounded-md border border-transparent bg-logoGold px-6 py-2 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-[#d9a54e] focus:outline-none lg:text-base"
+                  >
+                    {isSubmitting ? t("form.submitting") : t("form.submit")}
+                  </button>
+                  <Link
+                    href={NavPaths.REGISTER}
+                    className="hover-text-black text-xs text-black/85 underline underline-offset-2 sm:text-sm"
+                  >
+                    {t("form.register")}
+                  </Link>
+                  <Link
+                    href={NavPaths.FORGOTPASSWORD}
+                    className="hover-text-black text-xs text-black/85 underline underline-offset-2 sm:text-sm"
+                  >
+                    {t("form.forgotPassword")}
+                  </Link>
+                </div>
+              </Form>
+            )}
           </Formik>
         </div>
       </div>
-    </div>
+    </article>
   );
-};
-
-export default Login;
+}

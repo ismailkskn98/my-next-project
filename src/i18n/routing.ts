@@ -11,6 +11,7 @@ export enum NavPaths {
   CONTACT = "/contact",
   LOGIN = "/auth/login",
   REGISTER = "/auth/register",
+  FORGOTPASSWORD = "/auth/forgot-password",
 }
 
 export const routing = defineRouting({
@@ -57,6 +58,10 @@ export const routing = defineRouting({
     [NavPaths.REGISTER]: {
       en: "/auth/register",
       tr: "/auth/register", // Eğer Türkçede de aynı yol kullanılacaksa
+    },
+    [NavPaths.FORGOTPASSWORD]: {
+      en: "/auth/forgot-password",
+      tr: "/auth/forgot-password", // Eğer Türkçede de aynı yol kullanılacaksa
     },
   },
 });

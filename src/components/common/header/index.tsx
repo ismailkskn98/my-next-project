@@ -10,7 +10,7 @@ export default function Header() {
     <header className="fluid gridContainer relative z-10 space-y-3 bg-gradient-to-b from-black/100 pb-2 sm:from-black/80">
       <section className="fluid gridContainer span-row-3 w-full bg-black/60 px-1 pb-2 pt-3 backdrop-blur-sm lg:hidden">
         <article className="flex w-full items-center justify-end gap-2">
-          <Language />
+          <Language isAuth={false} />
           <AuthLink />
         </article>
       </section>
@@ -19,7 +19,7 @@ export default function Header() {
         <Navbar />
         <section className="flex items-center justify-between gap-8 overflow-hidden lg:gap-0">
           <div className="hidden items-center lg:flex">
-            <Language />
+            <Language isAuth={false} />
             <AuthLink />
           </div>
           <MobilNav />
