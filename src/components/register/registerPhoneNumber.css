@@ -28,7 +28,9 @@
 
 .react-tel-input .form-control {
   width: 100%;
+  height: unset;
   position: relative;
+  font-size: 14px;
   padding-left: 60px;
   margin-left: 0;
   background: transparent;
@@ -49,7 +51,8 @@
 .react-tel-input .flag-dropdown {
   position: absolute;
   left: 0;
-  height: 61%;
+  top: unset;
+  height: 60%;
   width: 50px;
   bottom: 0;
   padding: 0;

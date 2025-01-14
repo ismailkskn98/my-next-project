@@ -20,7 +20,7 @@ export default function MobilContact() {
 
   return (
     <section className="mx-auto flex items-center justify-center bg-transparent px-1 text-center text-white mobileL:px-3 sm:px-4 lg:mx-0">
-      <div ref={elementRef} className="max-w-3xl space-y-5 lg:space-y-6">
+      <div ref={elementRef} className="max-w-3xl space-y-6">
         <div className="relative mx-auto flex w-min items-center justify-center gap-4 font-raleway text-6xl font-bold uppercase leading-tight sm:text-7xl">
           <span>c1</span>
           <span className="flex items-center justify-center">
