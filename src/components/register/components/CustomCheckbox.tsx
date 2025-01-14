@@ -16,11 +16,10 @@ export default function CustomCheckbox({
   modalTitle,
 }: CustomCheckboxProps) {
   const [field, meta, helpers] = useField(input.name);
-  console.log(field);
   return (
     <label
       htmlFor={input.id}
-      className="col-span-2 flex cursor-pointer items-center gap-2 text-xs text-gray-700 md:col-span-1"
+      className="col-span-2 mb-1 mt-2 flex cursor-pointer items-center gap-2 text-xs text-gray-700 md:col-span-1"
     >
       <button
         type="button"

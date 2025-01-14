@@ -14,7 +14,7 @@ export default function MobilContact() {
     gsap.from(elementRef.current, {
       y: 500,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.5,
     });
   });
 
@@ -32,7 +32,7 @@ export default function MobilContact() {
                 alt="c1coin logo"
                 width={55}
                 height={50}
-                className="absolute left-1/2 top-1/2 -z-10 max-h-[38px] max-w-[34px] -translate-x-1/2 -translate-y-1/2 object-center drop-shadow-xl"
+                className="drop-shadow-xl absolute left-1/2 top-1/2 -z-10 max-h-[38px] max-w-[34px] -translate-x-1/2 -translate-y-1/2 object-center"
               />
             </span>
             ın

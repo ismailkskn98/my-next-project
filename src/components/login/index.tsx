@@ -3,10 +3,11 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { Formik, Form, type FormikHelpers } from "formik";
 import { Link, NavPaths } from "@/i18n/routing";
-import loginSchema from "./loginSchema";
 import handleSubmitLogin from "./handleSubmit";
 import CustomInput from "./components/CustomInput";
-import FormTitle from "../common/FormTitle";
+import FormTitle, { FormType } from "../common/FormTitle";
+import useLoginSchema from "./useLoginSchema";
+import AuthFormTop from "../common/AuthFormTop";
 
 export type LoginFormValues = {
   email: string;
@@ -20,16 +21,19 @@ const initialValues: LoginFormValues = {
 
 export default function LoginForm() {
   const t = useTranslations("Login");
+  const validationSchema = useLoginSchema();
+
   return (
-    <article className="relative flex h-full w-full items-center justify-center overflow-x-hidden bg-left-top bg-no-repeat px-8 lg:basis-2/5">
+    <article className="relative flex h-full w-full items-center justify-center overflow-x-hidden bg-left-top bg-no-repeat px-8 pt-5 lg:basis-2/5">
+      <AuthFormTop />
+      <div className="drop-shadow-3xl absolute inset-x-0 top-0 block h-28 bg-authTopBg bg-cover bg-center bg-no-repeat"></div>
       <div className="absolute bottom-0 right-0 h-24 w-24 rotate-[180deg] bg-loginBg bg-cover bg-center bg-no-repeat sm:h-32 sm:w-32"></div>
-      <div className="absolute bottom-0 right-0 h-11 w-11 rotate-[180deg] bg-loginBg bg-cover bg-center bg-no-repeat sm:h-32 sm:w-32"></div>
-      <div className="relative z-10 flex w-full min-w-[full] max-w-[417px] flex-col items-center gap-10 sm:min-w-[400px]">
-        <FormTitle title={t("title")} />
+      <div className="flex w-full min-w-[full] max-w-[417px] flex-col items-center gap-10 sm:min-w-[400px]">
+        <FormTitle title={t("title")} type={FormType.Login} />
         <div className="w-full">
           <Formik
             initialValues={initialValues}
-            validationSchema={loginSchema}
+            validationSchema={validationSchema}
             onSubmit={(
               values: LoginFormValues,
               actions: FormikHelpers<LoginFormValues>,

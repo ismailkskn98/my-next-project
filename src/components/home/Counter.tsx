@@ -62,7 +62,7 @@ export default function Counter() {
       gsap.from(".counter-item", {
         x: 400,
         opacity: 0,
-        delay: 0.8,
+        delay: 0.6,
         stagger: {
           each: 0.2,
         },

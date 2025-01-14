@@ -222,14 +222,24 @@
         "placeholder": "ornek@email.com"
       },
       "password": {
-        "label": "Sifre"
+        "label": "Şifre"
       },
       "submitting": "Gönderiliyor...",
       "submit": "Giriş Yap",
       "register": "Hesabın yok mu? Kayıt Ol",
-      "forgotPassword": "Sifrenizi mi unuttunuz?",
-      "Send": "Gönder",
-      "login": "Giriş Yap"
+      "forgotPassword": "Şifrenizi mi unuttunuz?",
+      "send": "Gönder",
+      "back": "Geri"
+    },
+    "validation": {
+      "email": {
+        "invalid": "Geçerli bir e-posta adresi giriniz",
+        "required": "E-posta adresi gereklidir"
+      },
+      "password": {
+        "minLength": "Şifre en az 8 karakter olmalıdır",
+        "required": "Şifre gereklidir"
+      }
     }
   },
   "Register": {
@@ -261,7 +271,44 @@
       },
       "submitting": "Hesap oluşturuluyor...",
       "submit": "Hesap Oluştur",
-      "login": "Zaten bir hesabınız var mı? Giriş Yap"
+      "login": "Zaten bir hesabınız var mı? Giriş Yap",
+      "back": "Geri"
+    },
+    "validation": {
+      "firstname": {
+        "minLength": "Ad en az 2 karakter olmalıdır",
+        "maxLength": "Ad en fazla 50 karakter olmalıdır",
+        "required": "Ad gereklidir"
+      },
+      "lastname": {
+        "minLength": "Soyad en az 2 karakter olmalıdır",
+        "maxLength": "Soyad en fazla 50 karakter olmalıdır",
+        "required": "Soyad gereklidir"
+      },
+      "email": {
+        "invalid": "Geçerli bir e-posta adresi giriniz",
+        "required": "E-posta gereklidir"
+      },
+      "password": {
+        "minLength": "Şifre en az 8 karakter olmalı",
+        "uppercase": "Şifre en az bir büyük harf içermeli",
+        "lowercase": "Şifre en az bir küçük harf içermeli",
+        "number": "Şifre en az bir rakam içermeli",
+        "required": "Şifre zorunludur"
+      },
+      "confirmPassword": {
+        "match": "Şifreler eşleşmiyor",
+        "required": "Şifre tekrarı gereklidir"
+      },
+      "phoneNumber": {
+        "minLength": "Telefon numarası en az 5 haneli olmalıdır",
+        "invalid": "Telefon numarası geçerli bir formatta olmalıdır",
+        "required": "Telefon numarası gereklidir"
+      },
+      "agreements": {
+        "kvkk": "KVKK onayı gereklidir",
+        "membership": "Üyelik onayı gereklidir"
+      }
     }
   },
   "ForgotPassword": {
@@ -274,7 +321,15 @@
       },
       "submit": "Gönder",
       "submitting": "Gönderiliyor...",
-      "login": "Giriş Yap"
+      "login": "Giriş Yap",
+      "register": "Hesabın yok mu? Kayıt Ol",
+      "back": "Geri"
+    },
+    "validation": {
+      "email": {
+        "invalid": "Geçerli bir e-posta adresi giriniz",
+        "required": "E-posta adresi gereklidir"
+      }
     }
   }
 }

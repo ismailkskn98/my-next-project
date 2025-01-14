@@ -1,5 +1,4 @@
 "use client";
-import Language from "@/components/common/header/Language";
 import dynamic from "next/dynamic";
 import { Toaster } from "sonner";
 
@@ -19,9 +18,6 @@ export default function AuthLayout({
   return (
     <main className="relative flex h-dvh w-full items-start justify-between bg-white">
       <Toaster position="top-center" closeButton richColors theme="light" />
-      <div className="absolute left-2 top-2 z-10 md:left-3 md:top-5">
-        <Language isAuth={true} />
-      </div>
       {children}
       <Animate />
     </main>

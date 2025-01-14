@@ -226,7 +226,18 @@
       "submit": "Login",
       "register": "Don't have an account? Sign Up",
       "forgotPassword": "Forgot your password?",
-      "send": "Send"
+      "send": "Send",
+      "back": "Back"
+    },
+    "validation": {
+      "email": {
+        "invalid": "Please enter a valid email address",
+        "required": "Email is required"
+      },
+      "password": {
+        "minLength": "Password must be at least 8 characters",
+        "required": "Password is required"
+      }
     }
   },
   "Register": {
@@ -258,7 +269,44 @@
       },
       "submitting": "Creating account...",
       "submit": "Create Account",
-      "login": "Already have an account? Log In"
+      "login": "Already have an account? Log In",
+      "back": "Back"
+    },
+    "validation": {
+      "firstname": {
+        "minLength": "First name must be at least 2 characters",
+        "maxLength": "First name must be at most 50 characters",
+        "required": "First name is required"
+      },
+      "lastname": {
+        "minLength": "Last name must be at least 2 characters",
+        "maxLength": "Last name must be at most 50 characters",
+        "required": "Last name is required"
+      },
+      "email": {
+        "invalid": "Please enter a valid email address",
+        "required": "Email is required"
+      },
+      "password": {
+        "minLength": "Password must be at least 8 characters",
+        "uppercase": "Password must contain at least one uppercase letter",
+        "lowercase": "Password must contain at least one lowercase letter",
+        "number": "Password must contain at least one number",
+        "required": "Password is required"
+      },
+      "confirmPassword": {
+        "match": "Passwords do not match",
+        "required": "Password confirmation is required"
+      },
+      "phoneNumber": {
+        "minLength": "Phone number must be at least 5 digits",
+        "invalid": "Phone number must be in a valid format",
+        "required": "Phone number is required"
+      },
+      "agreements": {
+        "kvkk": "KVKK agreement is required",
+        "membership": "Membership agreement is required"
+      }
     }
   },
   "ForgotPassword": {
@@ -271,7 +319,15 @@
       },
       "submit": "Submit",
       "submitting": "Submitting...",
-      "login": "Login"
+      "login": "Login",
+      "register": "Don't have an account? Sign Up",
+      "back": "Back"
+    },
+    "validation": {
+      "email": {
+        "invalid": "Please enter a valid email address",
+        "required": "Email is required"
+      }
     }
   }
 }

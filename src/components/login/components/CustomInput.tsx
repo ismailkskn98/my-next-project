@@ -15,7 +15,7 @@ const CustomInput: React.FC<CustomInputProps> = ({ label, ...props }) => {
     <div className="flex w-full flex-col items-start gap-2">
       <label
         htmlFor={props.name}
-        className="block text-xs font-medium text-black sm:text-sm"
+        className="ml-1 block text-sm font-medium text-black"
       >
         {label}
       </label>

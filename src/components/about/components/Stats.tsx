@@ -56,22 +56,25 @@ export default function Stats({ isHome = false }: { isHome?: boolean }) {
         <div
           ref={ref}
           key={item.id}
-          className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/10 py-14 backdrop-blur-sm"
+          className="stats-item flex h-full w-full max-w-[470px] flex-col items-center justify-center gap-4 rounded-xl bg-black/60 py-14 lg:backdrop-blur-sm"
         >
           <h5 className="px-4 text-center text-3xl font-semibold capitalize text-white sm:text-3xl">
             {item.title}
           </h5>
           <div className="flex items-end">
-            {inView && (
+            {inView ? (
               <CountUp
                 start={0}
                 end={item.value}
                 duration={2.5}
                 // enableScrollSpy={true}
-                scrollSpyDelay={500}
                 scrollSpyOnce={true}
                 className="text-3xl font-extrabold text-logoGold lg:text-4xl"
               />
+            ) : (
+              <span className="text-3xl font-extrabold text-logoGold lg:text-4xl">
+                0
+              </span>
             )}
             <span className="text-3xl font-bold text-logoGold lg:text-4xl">
               {item.unit}

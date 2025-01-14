@@ -14,7 +14,7 @@ export default function HomeImage() {
     y: 1,
     rotation: 1.5,
     scale: 0.002,
-    duration: 0.6,
+    duration: 0.5,
   });
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function HomeImage() {
           height={380}
           quality={100}
           priority
-          className="xl-max-w-[380px] h-auto shadow-[#EAC04A] drop-shadow-2xl lg:max-h-[350px] lg:max-w-[350px] xl:max-h-[380px]"
+          className="xl-max-w-[380px] drop-shadow-2xl h-auto shadow-[#EAC04A] lg:max-h-[350px] lg:max-w-[350px] xl:max-h-[380px]"
           ref={elementRef}
         />
       </article>
